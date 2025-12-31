@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr_Sobre Nós</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar (igual à do index.html) -->
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" >
+                <img src="images/logo_cor.png" alt="NOVA Aerospace Student Association Logo">
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item-active">
+                    <a href="about.html" class="nav-link">Sobre Nós</a>
+                </li>
+                <li class="nav-item dropdown" id="dropdown">
+                    <a href="projects.html" class="nav-link dropdown-toggle">
+                        Projetos
+                        <span class="arrow-down">▼</span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="projeto_astro.html" class="dropdown-item">🛰️ ASTRO</a>
+                        <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                        <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                         
+                        <a href="projects.html" class="dropdown-item">Ver Todos os Projetos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="activities_test.html" class="nav-link">Atividades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="educativa.html" class="nav-link">Programa Educativo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts2.html" class="nav-link">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero-like Header -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Sobre o NuAr</h1>
+            <p>Queremos ajudar os estudantes</p>
+        </div>
+    </section>
+
+<!-- About Info Section -->
+<section class="about-info-section">
+    <div class="container about-info-container">
+        <!-- Coluna 1 -->
+        <div class="about-info-card">
+            <div class="about-info-header">
+                <div class="about-icon">
+                     <i data-lucide="flag"></i>
+                </div>
+                <h3>A Nossa Missão</h3>
+            </div>
+            <br>
+            <p class="about-info-description">
+                Queremos mostrar que a área aeroespaciaal é para todos, reunindo estudantes 
+                de diferentes áreas da engenharia e das ciências para desenvolver ideias além da sala de aula.
+            </p>
+            <br>
+            <p class="about-info-description">
+                Para isto organizamos vários tipos de eventos e competições para todos os estudantes e ajudamos os nossos membros a desenvolver 
+                projetos que proporcionam experiências práticas e impulsionam a próxima geração de profissionais em aeroespacial.
+            </p>
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="about-info-card">
+            <div class="about-info-header">
+                <div class="about-icon">
+                    <!-- <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2l9 4.5-9 4.5-9-4.5L12 2z"/>
+                        <path d="M3 6.5v11l9 4.5 9-4.5v-11"/>
+                    </svg> -->
+                    <i data-lucide="eye"></i>
+                </div>
+                <h3>A Nossa Visão</h3>
+            </div>
+            <br>
+            <p class="about-info-description">
+                Aspiramos tornar-nos numa organização estudantil de referência em aeroespacial tanto em Portugal quanto na Europa, reconhecida pela
+                inovação e pelo contributo para a indústria e comunidade científica aeroespacial (tanto universitária como pré-universitária).            
+            </p>
+            <br>
+        </div>
+    </div>
+</section>
+
+<!-- Highlights Section -->
+<section class="highlights-section">
+    <div class="container">
+        <!-- Título e mini descrição -->
+        <div class="section-header">
+            <h2>Os Nossos Valores</h2>
+            <p>Os princípios que orientam o nosso trabalho e moldam a nossa comunidade</p>
+        </div>
+
+    <!-- Cards -->
+    <div class="highlights-container">
+        <!-- Card 1 -->
+        <div class="highlight-card">
+            <div class="card-icon">
+                <i data-lucide="lightbulb"></i>
+            </div>
+            <h3>Inovação</h3>
+            <p>Promovemos a criatividade e pensamento critico</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="highlight-card">
+            <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" 
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+            </div>
+            <h3>Colaboração</h3>
+            <p>Trabalhamos em equipa para alcançar um objetivo comum</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="highlight-card">
+            <div class="card-icon">
+                  <i data-lucide="book-open"></i>
+            </div>
+            <h3>Educação</h3>
+            <p>Partilhamos conhecimento através de atividades prática</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Team Section -->
+<!-- <section class="team-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>A Nossa Equipa de Liderança</h2>
+            <p>Conhece os estudantes que defendem e inovam a missão do NuAr</p>
+        </div>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="images/foto_Miguel.jpg" alt="Person 1">
+                </div>
+                <div class="team-info">
+                    <h3>Miguel Silva</h3>
+                    <span class="team-role">Presidente</span>
+                    <p class="team-course">Engenharia Eletrotécnica e de Computadores</p>
+                    <p class="team-year">4rd Year</p>
+                    <p class="team-description">
+                        Com interesse na área de aeroespacial e no trabalho de equipa. Coordena o Núcleo e os seus Projetos Inovadores.
+                    </p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="images/foto_Miguel.jpg" alt="Person 2">
+                </div>
+                <div class="team-info">
+                    <h3>Catarina Gonçalves</h3>
+                    <span class="team-role">Vice-Presidente</span>
+                    <p class="team-course">Engenharia Eletrotécnica e de Computadores</p>
+                    <p class="team-year">3rd Year</p>
+                    <p class="team-description">
+                        Focada em procurar parceiros para o NuAr, leva os nossos valores a todo o mundo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="images/foto_Miguel.jpg" alt="Person 3">
+                </div>
+                <div class="team-info">
+                    <h3>Tomás Lopes</h3>
+                    <span class="team-role">Tesoureiro</span>
+                    <p class="team-course">Engenharia Eletrotécnica e de Computadores</p>
+                    <p class="team-year">4nd Year</p>
+                    <p class="team-description">
+                        Responsável por toda a parte financeira do Núcleo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+<!-- Horizontal Info Section -->
+<section class="horizontal-info-section" style="background-color: #ffffff;">
+    <div class="container" >
+        <!-- Título e mini descrição -->
+        <div class="section-header">
+            <h2>A Nossa História</h2>
+            <p>O início de uma jornada aeroespacial na NOVA FCT</p>
+        </div>
+
+        <!-- Conteúdo dividido -->
+        <div class="horizontal-container">
+            <!-- Coluna Esquerda -->
+            <div class="horizontal-left">
+                <h3>Fundados para inovar</h3>
+                <p>
+                    O NuAr foi fundado por um grupo de estudantes interessados por engenharia aeroespacial da Universidade NOVA de Lisboa, 
+                    quando este curso ainda não existia na mesma. Unidos pela visão comum de promover o conhecimento em aeroespacial e 
+                    criar oportunidades de aprendizagem prática para além do ambiente tradicional de sala de aula foi <b>fundado o NuAr no dia XX de XX de 2022</b>.
+                    <br><br>
+                    Desde a nossa fundação, crescemos e tornámo-nos numa comunidade de <b>estudantes de várias áreas da engenharia e 
+                    das ciências</b>, todos unidos pela fascinio pelas tecnologias aeroespaciais e pela vontade de ajudar os estudantes.
+                    <br><br>
+                    Atualmente, o NuAr continua a expandir o seu impacto através de:
+                </p>
+
+                <ul>
+                    <li><b>Projetos inovadores</b>: Onde os nossos membros têm liberdade criativa e apoio técnico para desenvolver as suas ideias em equipa.</li>
+                    <li><b>Iniciativas educativas</b>: Onde através em várias escolas e empresas, mostramos aos jovens que a engenharia é algo que todos podemos alcançar e que o céu não é o limite</li>
+                </ul>
+            </div>
+
+
+            <!-- Coluna Direita -->
+            <div class="horizontal-right">
+                <div class="rocket-icon-circle">
+                <img src="images/rocket.png" alt="Rocket Icon" style="width:60px; height:60px;">
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+<script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdown = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle
+        if (window.innerWidth <= 768) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Handle dropdown behavior on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo_branco.png" alt="NuAr Logo">
+                        <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                    </div>
+                    <p class="footer-description">
+                        Tornamos Aeroespacial acessível a todos!
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="footer-social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="activities_test.html">Atividades</a></li>
+                        <li><a href="educativa.html">Programa Educativo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h3>Contactos</h3>
+                    <div class="contact-info">
+                        <p>Universidade NOVA de Lisboa </p>
+                        <p>Faculdade de Ciência e Tecnologias</p>
+                        <p>2829-516 Caparica, Portugal</p>
+                        <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="copyright">
+                    © 2025 NuAr - Núcleo de Aeroespacial da Universidade NOVA de Lisboa. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</html>

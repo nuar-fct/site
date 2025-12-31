@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar.scrolled .logo img {
+            content: url('images/logo_cor.png');
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" >
+                <img src="images/logo_cor.png" alt="NOVA Aerospace Student Association Logo">
+            </a>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Sobre Nós</a>
+                </li>
+                <li class="nav-item dropdown" id="dropdown">
+                    <a href="projects.html" class="nav-link dropdown-toggle">
+                        Projetos
+                        <span class="arrow-down">▼</span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="projeto_astro.html" class="dropdown-item">🚀 ASTRO</a>
+                        <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                        <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                        <a href="projects.html" class="dropdown-item">Ver Todos os Projetos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="activities_test.html" class="nav-link">Atividades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="educativa.html" class="nav-link">Programa Educativo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts2.html" class="nav-link">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="logo-hero">
+            <img src="images/logo_branco.png" alt="NOVA Aerospace Student Association">
+        </div>
+        
+        <h1>Mostramos que o Espaço é de Todos</h1>
+        <h2>na Universidade NOVA de Lisboa</h2>
+        
+        <p>
+            Junta-te ao NuAr, o Núcleo de Aeroespacial onde unimos talentos de diferentes áreas da engenharia e 
+            ciências para explorar as fronteiras do espço e da aeronáutica.
+        </p>
+        
+        <div class="cta-buttons">
+            <a href="about.html" class="btn btn-primary">Descobre a Nossa Missão →</a>
+            <a href="projects.html" class="btn btn-secondary">Conhece os nossos projetos</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>A Nossa Missão</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <!-- <h3>Inovação e Aprendizagem</h3> -->
+                    <p class="about-description">
+                       Queremos mostrar que a área aeroespaciaal é para todos, reunindo estudantes de 
+                       diferentes áreas da engenharia e das ciências para desenvolver ideias além da sala de aula.
+                       Para isto organizamos vários tipos de eventos e competições para todos os estudantes e ajudamos 
+                        os nossos membros a desenvolver projetos que proporcionam experiências práticas e impulsionam a 
+                        próxima geração de profissionais em aeroespacial.
+                    </p>
+                </div>
+                
+                <!-- <div class="about-visual">
+                    <div class="visual-circle">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explora o NuAr</h2>
+                <p class="explore-subtitle">
+                    Descobre os nossos projetos, participa nas nossas atividades e conhece o nosso Programa Educativo.
+                </p>
+            </div>
+
+        <div class="explore-cards">
+            <!-- Card 1 -->
+            <div class="explore-card">
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Projetos</h3>
+                <p>Descobre os projetos propostos e desenvolvidos pelos nossos membros.</p>
+                <a href="projects.html" class="learn-more">Ver mais →</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="explore-card">
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!--<circle cx="12" cy="12" r="10"/>
+                        <path d="M8 12h8"/>
+                        <path d="M12 8v8"/> -->
+                        <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M3 9H21" stroke="currentColor" stroke-width="2"/>
+                        <path d="M7 3V7M17 3V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M9 14L11 16L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Atividades</h3>
+                <p>Participa em workshops e eventos criados para inspirar e aprender.</p>
+                <a href="activities_test.html" class="learn-more">Ver mais →</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="explore-card">
+                <div class="card-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!--<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="17 8 12 3 7 8"/>
+                        <line x1="12" y1="3" x2="12" y2="15"/> -->
+                        <path d="M12 14L3 9.5L12 5L21 9.5L12 14Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M5 11V15C5 16.6569 8.13401 18 12 18C15.866 18 19 16.6569 19 15V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M21 9.5V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>            
+                            </svg>
+                </div>
+                <h3>Programa Educativo</h3>
+                <p>Vê o que fazemos pelas escolas de todo o país para os futuros engenheiros.</p>
+                <a href="educativa.html" class="learn-more">Ver mais →</a>
+        </div>
+    </div>
+
+        </div>
+    </section>
+
+    <!-- Educativa -->  
+    <section class="educativa-hero">
+        <div class="educativa-hero-content">
+            <!-- <h1>🎓 Programa Educativo NUAR</h1> -->
+            <h1>Programa Educativo NUAR</h1>
+            <p>Inspiramos a próxima geração de engenheiros aeroespaciais através de atividades interativas e desafios práticos em escolas por todo o país.</p>
+            
+            <div class="educativa-hero-stats">
+                <div class="educativa-hero-stat">
+                    <div class="educativa-hero-stat-number">5+</div>
+                    <div class="educativa-hero-stat-label">Escolas Visitadas</div>
+                </div>
+                <div class="educativa-hero-stat">
+                    <div class="educativa-hero-stat-number">400+</div>
+                    <div class="educativa-hero-stat-label">Alunos Inspirados</div>
+                </div>
+                <div class="educativa-hero-stat">
+                    <div class="educativa-hero-stat-number">3</div>
+                    <div class="educativa-hero-stat-label">Atividades Diferentes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Pronto para te juntares a nós?</h2>
+                <p>
+                    Adoraríamos ouvir-te. Quer estejas interessado em juntar-te a nós, colaborar ou simplesmente saber mais, entra em contacto!
+                </p>
+                <button onclick="openContactPopup()" class="contact-btn">
+                    Contacta-nos
+                </button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Popup -->
+    <div id="contactPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closeContactPopup()">&times;</button>
+            <h2>Os Nossos Contactos</h2>
+            <div class="popup-divider"></div>
+            
+            <div class="popup-contact-info">
+                <!-- email -->
+                <div class="popup-social">
+                    <div class="popup-social-links">
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="popup-social-link popup-email-link" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>nuar@ae.fct.unl.pt</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- insta  -->
+                <div class="popup-social">
+                    <div class="popup-social-links">
+                        <a href="https://www.instagram.com/nuarfct/" class="popup-social-link" aria-label="Instagram" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- linkedin -->
+                <div class="popup-social">
+                    <div class="popup-social-links">
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="popup-social-link" aria-label="LinkedIn" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Pronto para te juntares a nós?</h2>
+                <p>
+                    Adoraríamos ouvir-te. Quer estejas interessado em juntar-te a nós, colaborar ou simplesmente saber mais, entra em contacto!
+                </p>
+                <a href="mailto:nuar@ae.fct.unl.pt" class="contact-btn">
+                    Contacta-nos
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects for activity cards
+            document.querySelectorAll('.activity-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-5px) scale(1)';
+                });
+            });
+
+            // Animate stats on scroll
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statNumbers = entry.target.querySelectorAll('.educativa-hero-stat-number');
+                        statNumbers.forEach(stat => {
+                            const finalValue = stat.textContent;
+                            const numericValue = parseInt(finalValue.replace(/\D/g, ''));
+                            animateCounter(stat, 0, numericValue, finalValue.includes('+') ? '+' : '');
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            const heroStats = document.querySelector('.educativa-hero-stats');
+            if (heroStats) {
+                observer.observe(heroStats);
+            }
+
+            function animateCounter(element, start, end, suffix) {
+                const duration = 2000;
+                const range = end - start;
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const current = Math.floor(start + (range * progress));
+                    
+                    element.textContent = current + suffix;
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    }
+                }
+                
+                requestAnimationFrame(updateCounter);
+            }
+
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+    function openContactPopup() {
+        document.getElementById('contactPopup').classList.add('active');
+        document.body.style.overflow = 'hidden'; // Previne scroll
+    }
+
+    function closeContactPopup() {
+        document.getElementById('contactPopup').classList.remove('active');
+        document.body.style.overflow = 'auto'; // Restaura scroll
+    }
+
+    // Fechar ao clicar fora do popup
+    document.getElementById('contactPopup').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeContactPopup();
+        }
+    });
+
+    // Fechar com tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeContactPopup();
+        }
+    });
+    </script>
+
+    <!-- <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdown = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle
+        if (window.innerWidth <= 768) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Handle dropdown behavior on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+    </script> -->
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {   // <-- NOVO: espera pelo DOM
+        // Mobile menu toggle
+        const hamburger      = document.getElementById('hamburger');
+        const navMenu        = document.getElementById('nav-menu');
+        const dropdown       = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle (só em <= 768px)
+        dropdownToggle.addEventListener('click', (e) => {     // <-- ALTERADO: sempre ligado
+        if (window.innerWidth <= 768) {                     // <-- NOVO: check dentro do handler
+            e.preventDefault();                               // em mobile não navega
+            dropdown.classList.toggle('active');              // abre/fecha dropdown
+        }
+        // em desktop (>768) não há preventDefault -> segue o link "Projetos"
+        });
+
+        // Close mobile menu when clicking on a link (exceto dropdown-toggle)
+        document
+        .querySelectorAll('.nav-link:not(.dropdown-toggle)')
+        .forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            dropdown.classList.remove('active');              // <-- NOVO: fecha dropdown também
+        }));
+
+        // Handle dropdown behavior on resize
+        window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            dropdown.classList.remove('active');
+        }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            dropdown.classList.remove('active');
+        }
+        });
+    });
+    </script>
+
+</body>
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo_branco.png" alt="NuAr Logo">
+                        <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                    </div>
+                    <p class="footer-description">
+                        Tornamos Aeroespacial acessível a todos!
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="footer-social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="activities_test.html">Atividades</a></li>
+                        <li><a href="educativa.html">Programa Educativo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h3>Contactos</h3>
+                    <div class="contact-info">
+                        <p>Universidade NOVA de Lisboa </p>
+                        <p>Faculdade de Ciência e Tecnologias</p>
+                        <p>2829-516 Caparica, Portugal</p>
+                        <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="copyright">
+                    © 2025 NuAr - Núcleo de Aeroespacial da Universidade NOVA de Lisboa. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</html>
