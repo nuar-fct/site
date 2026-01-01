@@ -467,16 +467,24 @@
             max-width: 400px;
         }
 
-        .footer-logo {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 50px;
-        }
+       .footer-logo {
+              margin-bottom: 20px;
+              display: flex;
+              gap: 50px;
+              flex-wrap: wrap;     /* permite quebrar linha */
+       }
 
         .footer-logo img {
             height: 60px;
             width: auto;
         }
+
+       @media (max-width: 768px) {
+           .footer-logo img {
+               height: 40px;
+               max-width: 100%;
+           }
+       }
 
         .footer-description {
             font-size: 1rem;
@@ -666,6 +674,7 @@
                 padding: 0 20px;
             }
         }
+
 
 
 
