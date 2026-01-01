@@ -3,15 +3,17 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+       html, body {
+           max-width: 100%;
+           overflow-x: hidden;
+       }
+       
         body {
             /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
             font-family: 'Montserrat', sans-serif;
             /*background: linear-gradient(135deg, #0d1427 0%, #142757 50%, #192d6e 100%);*/
             background: white;
             color: white;
-            overflow-x: hidden;
-            max-width: 100%;
         }
 
         /* Navbar Styles */
@@ -655,6 +657,7 @@
         #copy-toast.show {
         opacity: 1;
         }
+
 
 
 
