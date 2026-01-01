@@ -659,5 +659,14 @@
         }
 
 
+       /* Tentativa de eliminar barra branca */
+        @media (max-width: 768px) {
+            .container,
+            .footer-container {
+                padding: 0 20px;
+            }
+        }
+
+
 
 
