@@ -11,6 +11,7 @@
             background: white;
             color: white;
             overflow-x: hidden;
+            max-width: 100%;
         }
 
         /* Navbar Styles */
@@ -654,5 +655,6 @@
         #copy-toast.show {
         opacity: 1;
         }
+
 
 
