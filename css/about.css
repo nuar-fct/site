@@ -246,14 +246,11 @@
     align-items: center;
 }
 
-.rocket-icon-circle {
-    width: 120px;
-    height: 120px;
-    background: #cfe0fc; /* círculo azul claro */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;      /* cantos arredondados, opcional */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* opcional */
 }
 
 
