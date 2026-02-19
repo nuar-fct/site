@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr_Programa Educativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/educativa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="NuAr — Página Inicial">
+            <img src="images/logo_cor.png" alt="NuAr Logo">
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item dropdown" id="dropdown">
+                <a href="projects.html" class="nav-link dropdown-toggle">
+                    Projetos <span class="arrow-down">▼</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="projeto_astro.html" class="dropdown-item">🚀 ASTRO</a>
+                    <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                    <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                    <a href="projects.html" class="dropdown-item">Ver Todos →</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="activities_test.html" class="nav-link">Atividades</a>
+            </li>
+            <li class="nav-item">
+                <a href="educativa.html" class="nav-link">Programa Educativo</a>
+            </li>
+            <li class="nav-item">
+                <a href="contacts2.html" class="nav-link">Contactos</a>
+            </li>
+        </ul>
+
+        <div class="language-switcher">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <a href="index-en.html" class="lang-link" aria-label="English">EN</a> -->
+        </div>
+    </div>
+    </nav>
+
+    <!-- Hero-like Header -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Programa Educativo</h1>
+            <p>Fazemos atividades em escolas por todo o pais</p>
+        </div>
+    </section>
+
+<!-- Main Content -->
+    <div class="main-content">
+        <!-- About the Program -->
+        <section class="content-section">
+            <h2 class="section-title">Sobre o Programa</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">
+                O Programa Educativo NuAr foi criado com o objetivo de expandir e facilitar o acesso ao conhecimento 
+                aeroespacial e inspirar jovens de todas as idades a explorarem o que as áreas STEM têm para nos dar. 
+                Através de atividades práticas, demonstrações interativas e desafios envolventes, levamos o universo 
+                aeroespacial diretamente aos jovens.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #555; margin-top: 1.5rem;">
+                Cada atividade é cuidadosamente adaptada à idade e nível de conhecimento dos alunos, garantindo que todos 
+                possam participar ativamente e aprender de forma divertida. Queremos mostrar que o espaço é de todos e que 
+                qualquer um tem uma oportunidade nesta área.
+            </p>
+
+            <!-- Galeria Polaroid -->
+        <div id="polaroid" class="gallery-container active">
+            <div class="polaroid-container">
+                <div class="polaroid">
+                    <img src="images/Egg_2.jpg" alt="Experiência">
+                    <!-- <div class="polaroid-caption">Mãos na massa! 🚀</div> -->
+                </div>
+                <div class="polaroid">
+                    <img src="images/Egg_4.jpg" alt="Equipa">
+                    <!-- <div class="polaroid-caption">Juntos aprendemos mais</div> -->
+                </div>
+                <div class="polaroid">
+                    <img src="images/Egg_3.jpg" alt="Diversão">
+                    <!-- <div class="polaroid-caption">Aprender é divertido!</div> -->
+                </div>
+                <div class="polaroid">
+                    <img src="images/Egg_1.jpg" alt="Sucesso">
+                    <!-- <div class="polaroid-caption">Missão cumprida ✓</div> -->
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- Activities -->
+        <section class="content-section">
+            <h2 class="section-title">Atividades Principais</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <span class="activity-icon">🥚</span>
+                    <h3 class="activity-title">EggLander Challenge</h3>
+                    <p class="activity-description">
+                        Competição com o objetivo de proteger um ovo cru de uma queda de cerca de 12m. Os jovens aprendem vários conceito básicos de engenharia.
+                    </p>
+            
+                    <div class="activity-details">
+                        <span class="activity-ages">6-18 anos</span>
+                        <span class="activity-duration">⏱️ 120 minutos</span>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <span class="activity-icon">🚀</span>
+                    <h3 class="activity-title">AquaRocket Challenge</h3>
+                    <p class="activity-description">
+                        Construção e lançamento de foguetões de água onde os alunos aprendem sobre propulsão, aerodinâmica e física através de uma experiência práticas e divertida.
+                    </p>
+                    <div class="activity-details">
+                        <span class="activity-ages">10-18 anos</span>
+                        <span class="activity-duration">⏱️ 120 minutos</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <span class="activity-icon">🛰️</span>
+                    <h3 class="activity-title">Workshops</h3>
+                    <p class="activity-description">
+                        Realizamos workshops com tema a debater com a entidade interessada (podendo ser mais geral ou focado em eletórnica ou mecânica, por exemplo).
+                    </p>
+                    <div class="activity-details">
+                        <span class="activity-ages">10-16 anos</span>
+                        <span class="activity-duration">⏱️ 60-90 minutos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Age Groups -->
+        <section class="content-section">
+            <h2 class="section-title">Grupos Etários</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #555;; margin-bottom: 2rem;">Adaptamos as nossas atividades para diferentes faixas etárias, garantindo que cada criança e jovem tenha uma experiência adequada ao seu nível de desenvolvimento.</p>
+            
+            <div class="age-groups">
+                <div class="age-group">
+                    <div class="age-icon">🧒</div>
+                    <h3 class="age-title">Exploradores</h3>
+                    <div class="age-range">6- 10 anos</div>
+                    <p class="age-description">
+                        Trabalho em equipa e desenvolvimento de pensamento crítico e criativo.
+                    </p>
+                </div>
+
+                <div class="age-group">
+                    <div class="age-icon">👧</div>
+                    <h3 class="age-title">Jovens Curiosos</h3>
+                    <div class="age-range">11-14 anos</div>
+                    <p class="age-description">
+                        Conceitos de metodologia, autonomia e desenvolvimento da motricidade fina. 
+                    </p>
+                </div>
+
+                <div class="age-group">
+                    <div class="age-icon">👦</div>
+                    <h3 class="age-title">Jovens Criadores</h3>
+                    <div class="age-range">14-16 anos</div>
+                    <p class="age-description">
+                        Associação da prática à teoria lecionada em sala de aula através de desafios reais.
+                    </p>
+                </div>
+
+                <div class="age-group">
+                    <div class="age-icon">🧑</div>
+                    <h3 class="age-title">Futuros Engenheiros</h3>
+                    <div class="age-range">16-18 anos</div>
+                    <p class="age-description">
+                        Descobrem um pouco do que poderão encontrar no ensino superior de forma prática.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="content-section">
+            <!-- <h2 class="section-title">⚙️ Como posso planear uma atividade com o NuAr?</h2>
+            <p class="section-subtitle">
+                Organizamos atividades educativas personalizadas para escolas e instituições. Consulta os nossos recursos e inicia o processo!
+            </p> -->
+            
+            <!-- <h3 class="section-subtitle-header">O Nosso Processo</h3> -->
+            <h3 class="section-subtitle-header">Como posso planear uma atividade com o NuAr?</h3>
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Contacto Inicial</h3>
+                    <p class="step-description">
+                        A entidade entra em contacto através do formulário ou email para solicitar uma atividade.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Planeamento</h3>
+                    <p class="step-description">
+                        Realizamos uma breve reunião para escolher a atividade e os seus requisitos.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Preparação</h3>
+                    <p class="step-description">
+                        A nossa equipa prepara todos os materiais e equipamentos necessários para a atividade.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Atividade</h3>
+                    <p class="step-description">
+                        Realizamos a atividade de acordo com o que foi previamente definido.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Follow-up</h3>
+                    <p class="step-description">
+                        Pedimos feedback e mantemos o contacto para futuras colaborações.
+                    </p>
+                </div>
+            </div>
+
+            <!-- NOVO: Recursos Disponíveis -->
+            <div class="resources-section">
+                <h3 class="section-subtitle-header">Recursos Disponíveis</h3>
+                <div class="resources-grid">
+                    <!-- Formulário -->
+                    <div class="resource-card">
+                        <span class="resource-icon">📝</span>
+                        <h4 class="resource-title">Formulário de Pedido</h4>
+                        <p class="resource-description">
+                            Preenche o nosso formulário para solicitar uma atividade.
+                        </p>
+                        <!-- <a href="SEU_LINK_GOOGLE_FORMS" class="resource-btn" target="_blank"></a> -->
+                        <a href="#" class="resource-btn" onclick="formIndisponivel(event)">
+                            Formulário
+                        </a>
+                    </div>
+                    <!-- Popup de manutenção -->
+                    <div id="form-overlay" class="form-overlay">
+                        <div class="form-modal">
+                            <h2>Formulário temporariamente indisponível</h2>
+                            <p>
+                            Caso tenha interesse em realizar alguma atividade connosco, envie um email para
+                            <br><br>
+                            <a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a>.
+                            <br><br>
+                            </p>
+                            <p>Obrigado pela compreensão.</p>
+                            <button class="form-close" onclick="fecharPopupForm()">Fechar</button>
+                        </div>
+                    </div>
+
+                    <!-- PDF Informativo Geral -->
+                    <div class="resource-card">
+                        <span class="resource-icon">📄</span>
+                        <h4 class="resource-title">Guia Informativo</h4>
+                        <p class="resource-description">
+                            Conhece todas as nossas atividades e o que oferecemos.
+                        </p>
+                        <a href="docs/NuAr_Apresentação_atividades.pdf" class="resource-btn" target="_blank">
+                            Visualizar PDF
+                        </a>
+                    </div>
+
+                <!-- PDF Atividade 1 -->
+                <div class="resource-card">
+                    <span class="resource-icon">🥚</span>
+                    <h4 class="resource-title">EggLander Challenge</h4>
+                    <p class="resource-description">
+                        Detalhes completos sobre o EggLander Challenge.
+                    </p>
+                    <a href="docs/NuAr_Guia_informativo_EggLander.pdf" class="resource-btn" target="_blank">
+                        Visualizar PDF
+                    </a>
+                </div>
+
+                <!-- PDF Atividade 2 -->
+                <div class="resource-card">
+                    <span class="resource-icon">🚀</span>
+                    <h4 class="resource-title">AquaRocket Challenge</h4>
+                    <p class="resource-description">
+                        Informações detalhadas sobre o AquaRocket Challenge.
+                    </p>
+                    <a href="docs/NuAr_Guia_Informativo_AquaRocket.pdf" class="resource-btn" target="_blank">
+                        Visualizar PDF
+                    </a>
+                </div>
+            </div>
+            </div>
+        
+            <!-- CTA Final -->
+            <div class="cta-box">
+                <h3>Pronto para começar?</h3>
+                <p>Escolhe a forma mais conveniente de nos contactar e vamos planear uma atividade incrível!</p>
+                <div class="cta-buttons">
+                    <!-- <a href="SEU_LINK_GOOGLE_FORMS" class="cta-btn-primary" target="_blank"> -->
+                    <a href="#" class="cta-btn-primary" onclick="formIndisponivel(event)">
+                        📝 Preencher Formulário
+                    </a>
+                    <a href="mailto:nuar@ae.fct.unl.pt" class="cta-btn-secondary" target="_blank">
+                        ✉️ Enviar Email
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <!-- <section class="cta-section">
+            <h2>Pronto para Inspirar os Vossos Alunos?</h2>
+            <p>
+                Marque já uma atividade na sua escola com o nosso Programa Educativo! Vamos proporcionar aos alunos uma experiência inesquecível no mundo da aeroespacial!
+            </p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn primary">
+                    📧 Marcar Atividade
+                </a>
+                <a href="#" class="cta-btn secondary">
+                    📋 Saber Mais
+                </a>
+            </div>
+        </section> -->
+
+        <!-- Testimonials -->
+        <section class="content-section">
+            <h2 class="section-title">💬 Testemunhos</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "Juventude, maturidade e competência foi o que pudemos testemunhar, em todas as fases, na equipa NuAr que 
+                        dinamizou na nossa escola a atividade EggLander Challenge. Sempre inteiramente comprometidos e com uma 
+                        organização eficiente mas flexível, os elementos da equipa do NuAr proporcionaram durante dois dias uma 
+                        experiência pedagógica significativa aos alunos de 19 turmas dos 6ºs, 7ºs e 8ºs que entusiasticamente se 
+                        envolveram na construção das suas cápsulas espaciais.
+                        <br>
+                        Parabéns!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PJ</div>
+                        <div class="author-info">
+                            <h4>Patrícia Jesus</h4>
+                            <p class="author-role">Professora do Agrupamento de Escolas Drª Laura Ayres</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="testimonial">
+                    <p class="testimonial-text">
+                        "Fantástico ver como os estudantes universitários conseguem inspirar os nossos alunos. Muitos ficaram interessados em seguir carreiras na área da engenharia depois desta visita."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" data-initials="JS">
+                            <img src="images/foto_Miguel.jpg" alt="João Santos" onerror="this.style.display='none'">
+                        </div>
+                        <div class="author-info">
+                            <h4>João Santos</h4>
+                            <p class="author-role">Diretor, Agrupamento de Escolas de Coimbra</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects for activity cards
+            document.querySelectorAll('.activity-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-5px) scale(1)';
+                });
+            });
+
+            // Animate stats on scroll
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statNumbers = entry.target.querySelectorAll('.hero-stat-number');
+                        statNumbers.forEach(stat => {
+                            const finalValue = stat.textContent;
+                            const numericValue = parseInt(finalValue.replace(/\D/g, ''));
+                            animateCounter(stat, 0, numericValue, finalValue.includes('+') ? '+' : '');
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            const heroStats = document.querySelector('.hero-stats');
+            if (heroStats) {
+                observer.observe(heroStats);
+            }
+
+            function animateCounter(element, start, end, suffix) {
+                const duration = 2000;
+                const range = end - start;
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const current = Math.floor(start + (range * progress));
+                    
+                    element.textContent = current + suffix;
+                    
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    }
+                }
+                
+                requestAnimationFrame(updateCounter);
+            }
+
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+    function formIndisponivel(e) {
+        e.preventDefault();
+        document.getElementById('form-overlay').classList.add('show');
+    }
+
+    function fecharPopupForm() {
+        document.getElementById('form-overlay').classList.remove('show');
+    }
+
+    const formOverlay = document.getElementById('form-overlay');
+    formOverlay.addEventListener('click', (e) => {
+        if (e.target.id === 'form-overlay') {
+        fecharPopupForm();
+        }
+    });
+    </script>
+
+
+
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdown = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle
+        if (window.innerWidth <= 768) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Handle dropdown behavior on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo_branco.png" alt="NuAr Logo">
+                        <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                    </div>
+                    <p class="footer-description">
+                        Tornamos Aeroespacial acessível a todos!
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="footer-social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Páginas</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="activities_test.html">Atividades</a></li>
+                        <li><a href="educativa.html">Programa Educativo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="TermosServicos.html">Termos de Serviço</a></li>
+                        <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h3>Contactos</h3>
+                    <div class="contact-info">
+                        <p>Universidade NOVA de Lisboa</p>
+                        <p>Faculdade de Ciência e Tecnologias</p>
+                        <p>2829-516 Caparica, Portugal</p>
+                        <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="copyright">
+                    © 2025 NuAr - Núcleo de Aeroespacial da Universidade NOVA de Lisboa. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+</html>

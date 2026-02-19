@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- ─── Meta & Title ─── -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr - Sobre Nós</title>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+
+    <!-- ─── Fonts ─── -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- ─── Stylesheets ─── -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="NuAr — Página Inicial">
+            <img src="images/logo_cor.png" alt="NuAr Logo">
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item dropdown" id="dropdown">
+                <a href="projects.html" class="nav-link dropdown-toggle">
+                    Projetos <span class="arrow-down">▼</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="projeto_astro.html" class="dropdown-item">🚀 ASTRO</a>
+                    <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                    <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                    <a href="projects.html" class="dropdown-item">Ver Todos →</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="activities_test.html" class="nav-link">Atividades</a>
+            </li>
+            <li class="nav-item">
+                <a href="educativa.html" class="nav-link">Programa Educativo</a>
+            </li>
+            <li class="nav-item">
+                <a href="contacts2.html" class="nav-link">Contactos</a>
+            </li>
+        </ul>
+
+        <div class="language-switcher">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <a href="index-en.html" class="lang-link" aria-label="English">EN</a> -->
+        </div>
+    </div>
+    </nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="about-hero">
+    <div class="about-hero-content">
+        <h1>Sobre o NuAr</h1>
+        <p>Mostramos que o espaço é de todos!</p>
+    </div>
+</section>
+
+<!-- ===================== MISSÃO + VISÃO ===================== -->
+<section class="about-info-section">
+    <div class="container about-info-container">
+
+        <div class="about-info-card fade-up">
+            <div class="about-info-header">
+                <div class="about-icon">
+                    <i data-lucide="flag"></i>
+                </div>
+                <h3>A Nossa Missão</h3>
+            </div>
+            <div class="divider"></div>
+            <p class="about-info-description">
+                Queremos mostrar que a área aeroespacial é para todos, reunindo estudantes
+                de diferentes áreas da engenharia e das ciências para desenvolver ideias além da sala de aula.
+            </p>
+            <p class="about-info-description">
+                Para isto organizamos vários tipos de eventos e competições para todos os estudantes e ajudamos os nossos
+                membros a desenvolver projetos que proporcionam experiências práticas.
+            </p>
+        </div>
+
+        <div class="about-info-card fade-up fade-up-d2">
+            <div class="about-info-header">
+                <div class="about-icon">
+                    <i data-lucide="eye"></i>
+                </div>
+                <h3>A Nossa Visão</h3>
+            </div>
+            <div class="divider"></div>
+            <p class="about-info-description">
+                Aspiramos tornar-nos numa organização estudantil de referência em aeroespacial tanto em Portugal
+                quanto na Europa, reconhecida pela inovação e pelo contributo para a indústria e comunidade
+                científica aeroespacial — tanto universitária como pré-universitária.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===================== VALORES ===================== -->
+<section class="highlights-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Os Nossos Valores</h2>
+            <p>Os princípios que orientam o nosso trabalho e moldam a nossa comunidade</p>
+        </div>
+
+        <div class="highlights-container">
+            <div class="highlight-card fade-up fade-up-d1">
+                <div class="card-icon">
+                    <i data-lucide="lightbulb"></i>
+                </div>
+                <h3>Inovação</h3>
+                <p>Promovemos a criatividade e o pensamento crítico em cada projeto que desenvolvemos.</p>
+            </div>
+
+            <div class="highlight-card fade-up fade-up-d2">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h3>Colaboração</h3>
+                <p>Trabalhamos em equipa para alcançar um objetivo comum e impactante.</p>
+            </div>
+
+            <div class="highlight-card fade-up fade-up-d3">
+                <div class="card-icon">
+                    <i data-lucide="book-open"></i>
+                </div>
+                <h3>Educação</h3>
+                <p>Partilhamos conhecimento através de atividades práticas e iniciativas inclusivas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== HISTÓRIA ===================== -->
+<section class="horizontal-info-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>A Nossa História</h2>
+            <p>O início de uma jornada aeroespacial na NOVA FCT</p>
+        </div>
+
+        <div class="horizontal-container">
+            <div class="horizontal-left fade-up">
+                <h3>Fundados para inovar</h3>
+                <p>
+                    O NuAr foi fundado por um grupo de estudantes interessados por engenharia aeroespacial da
+                    Universidade NOVA de Lisboa, quando este curso ainda não existia na mesma. Unidos pela visão
+                    comum de promover o conhecimento em aeroespacial e criar oportunidades de aprendizagem prática
+                    para além do ambiente tradicional de sala de aula foi <b>fundado o NuAr no dia 8 de junho de 2023</b>.
+                </p>
+                <p>
+                    Desde a nossa fundação, crescemos e tornámo-nos numa comunidade de <b>estudantes de várias áreas
+                    da engenharia e das ciências</b>, todos unidos pela fascínio pelas tecnologias aeroespaciais e
+                    pela vontade de ajudar os estudantes.
+                </p>
+                <p>Atualmente, o NuAr continua a expandir o seu impacto com:</p>
+                <ul>
+                    <li>
+                        <b>Projetos inovadores</b> - onde os nossos membros têm liberdade criativa e apoio
+                        técnico para desenvolver as suas ideias em equipa.
+                    </li>
+                    <li>
+                        <b>Iniciativas educativas</b> - através de visitas a várias escolas e empresas,
+                        mostramos aos jovens que a engenharia é algo que todos podemos alcançar e que
+                        o céu não é o limite.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="horizontal-right fade-up fade-up-d2">
+                <img src="images/Foto_Palestra_Vertical.jpeg"
+                     alt="Foto NuAr"
+                     class="about-photo"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="photo-placeholder" style="display:none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                    <span>Foto_Palestra_Vertical.jpeg</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo_branco.png" alt="NuAr Logo">
+                    <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                </div>
+                <p class="footer-description">Tornamos Aeroespacial acessível a todos!</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:nuarfct@gmail.com" class="footer-social-link" aria-label="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="projects.html">Projetos</a></li>
+                    <li><a href="activities_test.html">Atividades</a></li>
+                    <li><a href="educativa.html">Programa Educativo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="TermosServicos.html">Termos de Serviço</a></li>
+                    <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contactos</h3>
+                <div class="contact-info">
+                    <p>Universidade NOVA de Lisboa</p>
+                    <p>Faculdade de Ciências e Tecnologia</p>
+                    <p>2829-516 Caparica, Portugal</p>
+                    <p><a href="mailto:nuarfct@gmail.com">nuarfct@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-divider"></div>
+            <p class="copyright">© 2025 NuAr — Núcleo de Aeroespacial da NOVA FCT. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script>
+    lucide.createIcons();
+
+    // Navbar mobile toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    const dropdown  = document.getElementById('dropdown');
+    const ddToggle  = document.querySelector('.dropdown-toggle');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    if (window.innerWidth <= 900) {
+        ddToggle.addEventListener('click', e => {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+        });
+    }
+
+    document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n =>
+        n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        })
+    );
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            dropdown.classList.remove('active');
+        }
+    });
+
+    document.addEventListener('click', e => {
+        if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            dropdown.classList.remove('active');
+        }
+    });
+
+    // Scroll-triggered fade-in
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>

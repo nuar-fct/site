@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- ─── Meta & Title ─── -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr</title>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+
+    <!-- ─── Fonts ─── -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ─── Stylesheets ─── -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index_1.css">
+</head>
+<body class="page-home">
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="NuAr — Página Inicial">
+            <img src="images/logo_cor.png" alt="NuAr Logo">
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item dropdown" id="dropdown">
+                <a href="projects.html" class="nav-link dropdown-toggle">
+                    Projetos <span class="arrow-down">▼</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="projeto_astro.html" class="dropdown-item">🚀 ASTRO</a>
+                    <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                    <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                    <a href="projects.html" class="dropdown-item">Ver Todos →</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="activities_test.html" class="nav-link">Atividades</a>
+            </li>
+            <li class="nav-item">
+                <a href="educativa.html" class="nav-link">Programa Educativo</a>
+            </li>
+            <li class="nav-item">
+                <a href="contacts2.html" class="nav-link">Contactos</a>
+            </li>
+        </ul>
+        <div class="language-switcher">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <a href="index-en.html" class="lang-link" aria-label="English">EN</a> -->
+            </div>
+
+    </div>
+    </nav>
+
+    <main>
+
+        <!-- ════════════════════════════════════════
+             HERO — Secção principal de entrada
+        ════════════════════════════════════════ -->
+        <section class="hero" id="home" aria-label="Bem-vindo ao NuAr">
+
+            <!-- Logo branco do NuAr -->
+            <div class="logo-hero">
+                <img src="images/logo_branco.png" alt="NuAr — NOVA Aerospace Student Association">
+            </div>
+
+            <!-- Headline principal -->
+            <h1 class="hero-title">O Espaço é de Todos</h1>
+
+            <!-- Subtítulo curto e direto -->
+            <p class="hero-subtitle">
+                Somos o Núcleo de Aeroespacial da NOVA FCT, onde estudantes de engenharia e ciências
+                constroem o futuro
+            </p>
+
+            <!-- CTAs -->
+            <div class="cta-buttons">
+                <a href="about.html" class="btn btn-primary">Conhece-nos →</a>
+                <a href="projects.html" class="btn btn-secondary">Os nossos projetos</a>
+            </div>
+        </section>
+
+
+        <!-- ════════════════════════════════════════
+             ABOUT — Missão + galeria de fotos
+        ════════════════════════════════════════ -->
+        <section id="about" class="about-section" aria-label="A nossa missão">
+            <div class="container">
+
+                <header class="section-header">
+                    <h2>A Nossa Missão</h2>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="about-content">
+                    <p class="about-description">
+                        Reunimos estudantes de várias áreas de engenharia para aprender fazendo através de projetos 
+                        reais, competições internacionais e experiências que a sala de aula não consegue oferecer.
+                    </p>
+                </div>
+
+                <!-- Galeria de 3 fotos representativas -->
+                <div class="photo-trio" aria-label="Galeria de atividades">
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="images/Foto_EuRoC_2025.jpeg" alt="Equipa NuAr na competição EuRoC 2025" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="images/Foto_index.jpeg" alt="Membros NuAr em trabalho de equipa" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="photo-card">
+                        <div class="photo-wrapper">
+                            <img src="images/Foto_Palestra_Egg.jpeg" alt="Palestra e evento educativo NuAr" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ════════════════════════════════════════
+             EXPLORE — Cards de navegação rápida
+        ════════════════════════════════════════ -->
+        <section id="explore" class="explore-section" aria-label="Explora o NuAr">
+            <div class="container">
+
+                <header class="section-header">
+                    <h2>Explora o NuAr</h2>
+                    <p class="explore-subtitle">
+                        Projetos técnicos, workshops práticos e um programa que chega às escolas de todo o país.
+                    </p>
+                </header>
+
+                <div class="explore-cards">
+
+                    <!-- Card: Projetos -->
+                    <article class="explore-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>Projetos</h3>
+                        <p>Foguetões, satélites e muito mais — iniciativas lideradas pelos próprios membros.</p>
+                        <a href="projects.html" class="learn-more">Ver projetos →</a>
+                    </article>
+
+                    <!-- Card: Atividades -->
+                    <article class="explore-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                <path d="M3 9H21"/>
+                                <path d="M7 3V7M17 3V7" stroke-linecap="round"/>
+                                <path d="M9 14L11 16L15 12" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Atividades</h3>
+                        <p>Workshops, palestras e eventos para inspirar e ligar pessoas apaixonadas por espaço.</p>
+                        <a href="activities_test.html" class="learn-more">Ver atividades →</a>
+                    </article>
+
+                    <!-- Card: Programa Educativo -->
+                    <article class="explore-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 14L3 9.5L12 5L21 9.5L12 14Z" stroke-linejoin="round"/>
+                                <path d="M5 11V15C5 16.66 8.13 18 12 18C15.87 18 19 16.66 19 15V11" stroke-linecap="round"/>
+                                <path d="M21 9.5V14" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Prog. Educativo</h3>
+                        <p>Levamos a engenharia aeroespacial a escolas de todo o país para inspirar a próxima geração.</p>
+                        <a href="educativa.html" class="learn-more">Saber mais →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ════════════════════════════════════════
+             STATS — Programa Educativo em números
+        ════════════════════════════════════════ -->
+        <section class="educativa-hero" aria-label="Impacto do Programa Educativo">
+            <div class="educativa-hero-content">
+                <h2>Programa Educativo NuAr</h2>
+                <p>Levamos atividades práticas de aeroespacial a escolas por todo o país e os números falam por si.</p>
+
+                <div class="educativa-hero-stats" aria-label="Estatísticas de impacto">
+                    <div class="educativa-hero-stat">
+                        <div class="educativa-hero-stat-number">5+</div>
+                        <div class="educativa-hero-stat-label">Escolas Visitadas</div>
+                    </div>
+                    <div class="educativa-hero-stat">
+                        <div class="educativa-hero-stat-number">400+</div>
+                        <div class="educativa-hero-stat-label">Alunos Inspirados</div>
+                    </div>
+                    <div class="educativa-hero-stat">
+                        <div class="educativa-hero-stat-number">3</div>
+                        <div class="educativa-hero-stat-label">Atividades Diferentes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ════════════════════════════════════════
+             CTA FINAL — Entra ou colabora connosco
+        ════════════════════════════════════════ -->
+        <!-- <section id="contact" class="contact-section" aria-label="Entra em contacto">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Pronto para voar?</h2>
+                    <p>
+                        Seja para te juntar à equipa, colaborar como empresa, ou simplesmente saber mais —
+                        a nossa porta está sempre aberta.
+                    </p>
+                    <button onclick="openContactPopup()" class="contact-btn">Contacta-nos</button>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+
+    <!-- ════════════════════════════════════════
+         POPUP DE CONTACTO
+    ════════════════════════════════════════ -->
+    <div id="contactPopup" class="popup-overlay" role="dialog" aria-modal="true" aria-label="Contactos NuAr">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closeContactPopup()" aria-label="Fechar">&times;</button>
+            <h2>Os Nossos Contactos</h2>
+            <div class="popup-divider"></div>
+
+            <div class="popup-contact-info">
+                <!-- Email -->
+                <div class="popup-social">
+                    <div class="popup-social-links">
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="popup-social-link popup-email-link" aria-label="Email NuAr">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>nuar@ae.fct.unl.pt</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="popup-social">
+                    <div class="popup-social-links">
+                        <a href="https://www.instagram.com/nuarfct/" class="popup-social-link" aria-label="Instagram NuAr" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="popup-social">
+                    <div class="popup-social-links">
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="popup-social-link" aria-label="LinkedIn NuAr" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ════════════════════════════════════════
+         FOOTER
+    ════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+
+                <!-- Marca e redes sociais -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo_branco.png" alt="NuAr Logo">
+                        <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                    </div>
+                    <p class="footer-description">Tornamos aeroespacial acessível a todos.</p>
+                    <nav class="footer-social" aria-label="Redes sociais">
+                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="footer-social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Links rápidos -->
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="activities_test.html">Atividades</a></li>
+                        <li><a href="educativa.html">Prog. Educativo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="TermosServicos.html">Termos de Serviço</a></li>
+                        <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-contact">
+                    <h3>Contactos</h3>
+                    <div class="contact-info">
+                        <p>FCT - Universidade NOVA de Lisboa</p>
+                        <p>2829-516 Caparica, Portugal</p>
+                        <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="copyright">© 2026 NuAr - Núcleo de Aeroespacial NOVA FCT. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ════════════════════════════════════════
+         SCRIPTS — Navbar mobile + popup + stats
+    ════════════════════════════════════════ -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // ── Navbar scroll effect ──
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ── Navbar: menu hamburger ──
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdown = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', (e) => {
+                e.stopPropagation(); // previne propagação
+                const isOpen = navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                
+                // DEBUG: console log para verificar
+                console.log('Hamburger clicked, active:', hamburger.classList.contains('active'));
+            });
+
+            // Dropdown: em mobile só abre, em desktop segue o link
+            if (dropdownToggle) {
+                dropdownToggle.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 900) { // mudei de 768 para 900
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+
+            // Fecha menu ao clicar num link (exceto dropdown toggle)
+            document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => {
+                n.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Reset ao redimensionar para desktop
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 900) { // mudei de 768 para 900
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Fecha ao clicar fora
+            document.addEventListener('click', (e) => {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // ── Animação de contador nas stats ──
+        const observerOpts = { threshold: 0.5, rootMargin: '0px 0px -80px 0px' };
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.educativa-hero-stat-number').forEach(el => {
+                        const raw = el.textContent;
+                        const num = parseInt(raw.replace(/\D/g, ''), 10);
+                        const suffix = raw.includes('+') ? '+' : '';
+                        animateCounter(el, 0, num, suffix);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOpts);
+
+        const heroStats = document.querySelector('.educativa-hero-stats');
+        if (heroStats) statsObserver.observe(heroStats);
+
+        function animateCounter(el, start, end, suffix) {
+            const duration = 1800;
+            const startTime = performance.now();
+            (function tick(now) {
+                const t = Math.min((now - startTime) / duration, 1);
+                el.textContent = Math.floor(start + (end - start) * t) + suffix;
+                if (t < 1) requestAnimationFrame(tick);
+            })(performance.now());
+        }
+
+        // ── Smooth scroll para âncoras internas ──
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ── Popup de contacto ──
+        const contactPopup = document.getElementById('contactPopup');
+        
+        window.openContactPopup = function() {
+            if (contactPopup) {
+                contactPopup.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        };
+        
+        window.closeContactPopup = function() {
+            if (contactPopup) {
+                contactPopup.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        };
+
+        // Fecha ao clicar no overlay (fora do card)
+        if (contactPopup) {
+            contactPopup.addEventListener('click', function(e) {
+                if (e.target === this) window.closeContactPopup();
+            });
+        }
+
+        // Fecha com ESC
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') window.closeContactPopup();
+        });
+    });
+    </script>
+
+</body>
+</html>
