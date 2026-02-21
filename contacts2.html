@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr_Contactos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="NuAr — Página Inicial">
+            <img src="images/logo_cor.png" alt="NuAr Logo">
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item dropdown" id="dropdown">
+                <a href="projects.html" class="nav-link dropdown-toggle">
+                    Projetos <span class="arrow-down">▼</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="projeto_astro.html" class="dropdown-item">🚀 ASTRO</a>
+                    <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                    <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                    <a href="projects.html" class="dropdown-item">Ver Todos →</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="activities_test.html" class="nav-link">Atividades</a>
+            </li>
+            <li class="nav-item">
+                <a href="educativa.html" class="nav-link">Programa Educativo</a>
+            </li>
+            <li class="nav-item">
+                <a href="contacts2.html" class="nav-link">Contactos</a>
+            </li>
+            
+            <!-- EN para MOBILE, no fim da lista -->
+            <li class="nav-item language-switcher-mobile">
+                <div class="language-mobile-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10
+                            15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+
+                <span class="lang-divider-mobile"></span>
+
+                <a href="index-en.html" class="lang-link" aria-label="English">EN</a>
+                </div>
+            </li>
+        </ul>
+        <!-- EN para DESKTOP, fora do ul -->
+        <div class="language-switcher language-switcher-desktop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10
+                            15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+
+                <span class="lang-divider-mobile"></span>
+
+                <a href="index-en.html" class="lang-link" aria-label="English">EN</a>
+            </div>
+
+    </div>
+    </nav>
+
+    <!-- Hero-like Header -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Contactos</h1>
+            <p>Entre em contacto connosco. Estamos aqui para ajudar!</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container_footer">
+        <div class="contact-grid">
+            <!-- Email Card -->
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3>Email</h3>
+                <p>Envie-nos um email para:</p>
+                <a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a>
+            </div>
+
+            <!-- Address Card -->
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Morada</h3>
+                <p>
+                    Universidade NOVA de Lisboa<br>
+                    Faculdade de Ciência e Tecnologias<br>
+                    2829-516 Caparica, Portugal
+                </p>
+            </div>
+
+            <!-- Social Media Card -->
+            <div class="contact-card social-card">
+                <h3>Contacte-nos através de qualquer plataforma:</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/nuarfct/" class="social-icon" target="_blank" title="Instagram">
+                        <img src="images/instagram-svgrepo-com.svg" alt="Instagram" >
+                    </a>
+                    <a href="mailto:nuar@ae.fct.unl.pt" class="social-icon" target="_blank" title="Email">
+                        <img src="images/icons8-gmail.svg" alt="Email" >
+                    </a>
+                    <a href="https://www.linkedin.com/company/nuarfct/" class="social-icon" target="_blank" title="LinkedIn">
+                        <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <h2>A Nossa Localização</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6230.98038444249!2d-9.204937104971188!3d38.66059517411422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecada48566bb1%3A0x55cb23cb663b5d97!2sFCT!5e0!3m2!1spt-PT!2spt!4v1756390658615!5m2!1spt-PT!2spt"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+        <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdown = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle
+        if (window.innerWidth <= 768) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Handle dropdown behavior on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo_branco.png" alt="NuAr Logo">
+                        <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                    </div>
+                    <p class="footer-description">
+                        Tornamos Aeroespacial acessível a todos!
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="footer-social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Páginas</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="activities_test.html">Atividades</a></li>
+                        <li><a href="educativa.html">Programa Educativo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="TermosServicos.html">Termos de Serviço</a></li>
+                        <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h3>Contactos</h3>
+                    <div class="contact-info">
+                        <p>Universidade NOVA de Lisboa</p>
+                        <p>Faculdade de Ciência e Tecnologias</p>
+                        <p>2829-516 Caparica, Portugal</p>
+                        <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="copyright">
+                    © 2025 NuAr - Núcleo de Aeroespacial da Universidade NOVA de Lisboa. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    </html>

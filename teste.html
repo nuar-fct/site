@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades - NOVA Aerospace</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f1f5f9;
+            padding: 2rem;
+        }
+
+        .activity-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .activity-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .workshop-badge {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .activity-title {
+            color: #1e293b;
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .activity-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .activity-details {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #475569;
+        }
+
+        .register-btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .register-btn:hover {
+            background: #2563eb;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: white;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .modal-header {
+            padding: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .close {
+            float: right;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #64748b;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: #1e293b;
+        }
+
+        .modal-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .modal-title {
+            color: #1e293b;
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .modal-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .modal-details {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .modal-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #475569;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .photo-item {
+            position: relative;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .photo-item:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .photo-item:hover .photo-overlay {
+            transform: translateY(0);
+        }
+
+        .modal-extended-content {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-extended-content h4 {
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+        }
+
+        .modal-extended-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .modal-extended-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .modal-extended-content li {
+            color: #475569;
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .modal-extended-content li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+
+        .confirm-register-btn {
+            width: 100%;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .confirm-register-btn:hover {
+            background: #2563eb;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            z-index: 10001;
+        }
+
+        .lightbox-close:hover {
+            color: #3b82f6;
+        }
+
+        .lightbox-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            padding: 20px;
+            transition: all 0.3s;
+            z-index: 10001;
+            background: rgba(0,0,0,0.5);
+            border-radius: 8px;
+        }
+
+        .lightbox-arrow:hover {
+            color: #3b82f6;
+            background: rgba(0,0,0,0.8);
+        }
+
+        .lightbox-arrow-left {
+            left: 20px;
+        }
+
+        .lightbox-arrow-right {
+            right: 20px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            z-index: 10001;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Activity Card Example -->
+    <div class="activity-card">
+        <div class="workshop-badge activity-badge">📚 Workshop</div>
+        <div class="activity-content">
+            <h3 class="activity-title">Aerospace Engineering Workshop Series</h3>
+            <p class="activity-description">Hands-on workshop covering fundamentals of aerospace engineering, including aerodynamics, propulsion, and space systems.</p>
+            
+            <div class="activity-details">
+                <div class="detail-item">
+                    <span class="detail-icon">📅</span>
+                    <span>March 15, 2024</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🕐</span>
+                    <span>14:00 - 17:00</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">📍</span>
+                    <span>NOVA FCT Campus</span>
+                </div>
+            </div>
+            
+            <button class="register-btn" onclick="openModal('workshop')">See More</button>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="activityModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modalBadge" class="modal-badge"></div>
+                <h3 id="modalTitle" class="modal-title"></h3>
+                <p id="modalDescription" class="modal-description"></p>
+                <div id="modalDetails" class="modal-details"></div>
+            </div>
+            <div class="modal-body">
+                <div id="modalPhotos" class="modal-photos"></div>
+                <div id="modalExtendedContent" class="modal-extended-content"></div>
+                <button class="confirm-register-btn" onclick="confirmRegistration()">Confirm Registration</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-arrow lightbox-arrow-left" onclick="navigateLightbox(-1)">&#10094;</span>
+        <span class="lightbox-arrow lightbox-arrow-right" onclick="navigateLightbox(1)">&#10095;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <script>
+        // ============================================
+        // CONFIGURAÇÃO DAS FOTOS DO GOOGLE DRIVE
+        // ============================================
+        
+        // Para cada foto:
+        // 1. Abre a foto no Google Drive
+        // 2. Clica em "Partilhar" → "Obter link" → "Qualquer pessoa com o link"
+        // 3. COLA O LINK COMPLETO - o código extrai o ID automaticamente!
+        //    Aceita qualquer formato:
+        //    - https://drive.google.com/file/d/1ABC123xyz/view
+        //    - https://drive.google.com/open?id=1ABC123xyz
+        //    - Ou apenas o ID: 1ABC123xyz
+        
+        const activityData = {
+            workshop: {
+                badge: { text: "📚 Workshop", class: "workshop-badge" },
+                title: "Aerospace Engineering Workshop Series",
+                description: "Hands-on workshop covering fundamentals of aerospace engineering, including aerodynamics, propulsion, and space systems.",
+                details: [
+                    { icon: "📅", text: "March 15, 2024" },
+                    { icon: "🕐", text: "14:00 - 17:00" },
+                    { icon: "📍", text: "NOVA FCT Campus" }
+                ],
+                // COLA AQUI OS LINKS COMPLETOS DO GOOGLE DRIVE
+                drivePhotos: [
+                    { url: "https://drive.google.com/file/d/1eaL_z-ujnPqFe9FmM5FDpKvhbVjDQor0/view?usp=drive_link", caption: "Workshop participants working on models" },
+                    { url: "https://drive.google.com/file/d/1LF__5chKBJEUPYamPzpFd53xBAsFv4eU/view?usp=drive_link", caption: "Testing aerodynamic designs" },
+                    { url: "https://drive.google.com/file/d/1hHbnqYEWV6oLdTlQBuwEqaPqb-NpfT9j/view?usp=drive_link", caption: "3D printed rocket components" },
+                    { url: "1JKL012ghi", caption: "Final presentations" } // Também aceita só o ID
+                ],
+                extendedContent: {
+                    title: "What You'll Learn",
+                    content: "Join us for an intensive workshop series designed to introduce students to the fascinating world of aerospace engineering. Our expert instructors will guide you through hands-on experiments and theoretical concepts.",
+                    topics: [
+                        "Fundamentals of aerodynamics and fluid mechanics",
+                        "Propulsion systems and rocket engines",
+                        "Orbital mechanics and spacecraft design",
+                        "Materials science in aerospace applications",
+                        "Hands-on model building and testing"
+                    ]
+                }
+            }
+        };
+
+        // Função auxiliar para extrair ID do Google Drive de qualquer formato de URL
+        function extractDriveId(urlOrId) {
+            // Se já for um ID (sem https), retorna direto
+            if (!urlOrId.includes('http') && !urlOrId.includes('/')) {
+                return urlOrId;
+            }
+            
+            // Extrai de: https://drive.google.com/file/d/ID/view
+            let match = urlOrId.match(/\/file\/d\/([^\/\?]+)/);
+            if (match) return match[1];
+            
+            // Extrai de: https://drive.google.com/open?id=ID
+            match = urlOrId.match(/[?&]id=([^&]+)/);
+            if (match) return match[1];
+            
+            // Extrai de: https://drive.google.com/uc?id=ID
+            match = urlOrId.match(/uc\?id=([^&]+)/);
+            if (match) return match[1];
+            
+            // Se não conseguir extrair, retorna o original
+            return urlOrId;
+        }
+
+        // Função auxiliar para converter ID do Drive em URL de imagem (thumbnail)
+        function getDriveImageUrl(urlOrId) {
+            const fileId = extractDriveId(urlOrId);
+            return `https://drive.google.com/thumbnail?id=${fileId}&sz=w800`;
+        }
+
+        // Função auxiliar para obter URL de imagem em tamanho completo
+        function getDriveImageFullUrl(urlOrId) {
+            const fileId = extractDriveId(urlOrId);
+            // Usa o formato que funciona melhor para visualização direta
+            return `https://lh3.googleusercontent.com/d/${fileId}=s4000`;
+        }
+
+        function openModal(type) {
+            const modal = document.getElementById('activityModal');
+            const data = activityData[type];
+            
+            // Update modal content
+            document.getElementById('modalBadge').textContent = data.badge.text;
+            document.getElementById('modalBadge').className = `modal-badge ${data.badge.class}`;
+            document.getElementById('modalTitle').textContent = data.title;
+            document.getElementById('modalDescription').textContent = data.description;
+            
+            // Update details
+            const detailsContainer = document.getElementById('modalDetails');
+            detailsContainer.innerHTML = '';
+            data.details.forEach(detail => {
+                const detailDiv = document.createElement('div');
+                detailDiv.className = 'modal-detail-item';
+                detailDiv.innerHTML = `<span>${detail.icon}</span><span>${detail.text}</span>`;
+                detailsContainer.appendChild(detailDiv);
+            });
+            
+            // Update photos from Drive
+            const photosContainer = document.getElementById('modalPhotos');
+            if (data.drivePhotos && data.drivePhotos.length > 0) {
+                const photosHTML = `
+                    <h4 style="color: #1e293b; font-weight: 600; margin-bottom: 0.75rem;">Event Photos</h4>
+                    <div class="photos-grid">
+                        ${data.drivePhotos.map((photo, index) => `
+                            <div class="photo-item" onclick="openLightboxWithNav(${index}, activityData['${type}'].drivePhotos)">
+                                <img src="${getDriveImageUrl(photo.url)}" alt="${photo.caption}" loading="lazy">
+                                <div class="photo-overlay">${photo.caption}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                photosContainer.innerHTML = photosHTML;
+            } else {
+                photosContainer.innerHTML = '';
+            }
+            
+            // Update extended content
+            const extendedContainer = document.getElementById('modalExtendedContent');
+            const topics = data.extendedContent.topics.map(topic => `<li>${topic}</li>`).join('');
+            extendedContainer.innerHTML = `
+                <h4>${data.extendedContent.title}</h4>
+                <p>${data.extendedContent.content}</p>
+                <ul>${topics}</ul>
+            `;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('activityModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function confirmRegistration() {
+            alert('Registration confirmed! You will receive a confirmation email shortly.');
+            closeModal();
+        }
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            
+            // Mostra o lightbox imediatamente
+            lightbox.classList.add('active');
+            
+            // Define o src da imagem
+            img.src = src;
+            
+            // Adiciona um fallback caso a imagem não carregue
+            img.onerror = function() {
+                // Se falhar, tenta URL alternativo
+                const fileId = extractDriveId(src);
+                img.src = `https://drive.google.com/uc?export=view&id=${fileId}`;
+            };
+        }
+
+        // Variáveis globais para navegação do lightbox
+        let currentLightboxIndex = 0;
+        let currentPhotosArray = [];
+
+        function openLightboxWithNav(index, photosArray) {
+            currentLightboxIndex = index;
+            currentPhotosArray = photosArray;
+            
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const counter = document.getElementById('lightbox-counter');
+            
+            // Obtém a URL da foto atual
+            const currentPhoto = photosArray[index];
+            const src = getDriveImageFullUrl(currentPhoto.url);
+            
+            // Mostra o lightbox
+            lightbox.classList.add('active');
+            img.src = src;
+            
+            // Atualiza o contador
+            counter.textContent = `${index + 1} / ${photosArray.length}`;
+            
+            // Fallback se não carregar
+            img.onerror = function() {
+                const fileId = extractDriveId(currentPhoto.url);
+                img.src = `https://drive.google.com/uc?export=view&id=${fileId}`;
+            };
+        }
+
+        function navigateLightbox(direction) {
+            currentLightboxIndex += direction;
+            
+            // Loop: se chegar ao fim, volta ao início e vice-versa
+            if (currentLightboxIndex >= currentPhotosArray.length) {
+                currentLightboxIndex = 0;
+            } else if (currentLightboxIndex < 0) {
+                currentLightboxIndex = currentPhotosArray.length - 1;
+            }
+            
+            openLightboxWithNav(currentLightboxIndex, currentPhotosArray);
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('activityModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal/lightbox with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+                closeLightbox();
+            }
+            // Navegação com setas do teclado no lightbox
+            if (document.getElementById('lightbox').classList.contains('active')) {
+                if (event.key === 'ArrowRight') {
+                    navigateLightbox(1);
+                } else if (event.key === 'ArrowLeft') {
+                    navigateLightbox(-1);
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
