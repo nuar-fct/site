@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -326,3 +327,333 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr_Recrutamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recrutamento.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container_recruitment">
+        <div class="header">
+            <h1>Recrutamento NuAr 2026</h1>
+            <p class="subtitle">Junta-te ao Núcleo de Aeroespacial da NOVA FCT</p>
+        </div>
+
+        <form id="recruitmentForm">
+            <!-- Informações Básicas -->
+            <section id="BASIC-section" class="form-section">
+                <h2>Informações Básicas</h2>
+                <div class="form-group">
+                    <label for="name">Nome Completo *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="studentNumber">Número de Aluno *</label>
+                    <input type="text" id="studentNumber" name="studentNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Curso *</label>
+                    <input type="text" id="course" name="course" required>
+                </div>         
+<!-- BASIC_MARKER -->
+            </section>
+
+            <!-- Seleção de Área -->
+            <section class="form-section">
+                <h2>Áreas de Interesse</h2>
+                <p class="section-description">Seleciona todas as áreas em que gostarias de participar *</p>
+                
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="areas" value="administrativa" id="area-administrativa">
+                        <span class="checkbox-text">Área Administrativa</span>
+                    </label>
+                    
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="areas" value="projeto1" id="area-projeto1">
+                        <span class="checkbox-text">Projeto 1</span>
+                    </label>
+                    
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="areas" value="projeto2" id="area-projeto2">
+                        <span class="checkbox-text">Projeto 2</span>
+                    </label>
+                    
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="areas" value="projeto3" id="area-projeto3">
+                        <span class="checkbox-text">Projeto 3</span>
+                    </label>
+                </div>
+            
+            <!-- AREA_MARKER -->
+            </section>
+
+            <!-- Perguntas Área Administrativa -->
+            <section id="administrativa-section" class="conditional-section" style="display: none;">
+                <h2>Área Administrativa</h2>
+    
+                <div class="form-group">
+                    <label for="admin-experience">Tens experiência em gestão de eventos ou organizações estudantis?</label>
+                    <textarea id="admin-experience" name="admin-experience" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="admin-motivation">Porque queres fazer parte da área administrativa do NuAr?</label>
+                    <textarea id="admin-motivation" name="admin-motivation" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="admin-skills">Que competências achas que podes trazer para a equipa?</label>
+                    <textarea id="admin-skills" name="admin-skills" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="admin-availability">Quantas horas por semana podes dedicar ao núcleo?</label>
+                    <select id="admin-availability" name="admin-availability">
+                        <option value="">-- Seleciona --</option>
+                        <option value="2-4">2-4 horas</option>
+                        <option value="4-6">4-6 horas</option>
+                        <option value="6-10">6-10 horas</option>
+                        <option value="10+">Mais de 10 horas</option>
+                    </select>
+                </div>
+
+            <!-- ADMIN_MARKER -->
+            </section>
+
+            <!-- Perguntas Projeto 1 -->
+            <section id="ASTRO-section" class="conditional-section" style="display: none;">
+                <h2>Projeto 1</h2>
+                
+                <div class="form-group">
+                    <label for="proj1-knowledge">Qual é o teu nível de conhecimento técnico na área aeroespacial?</label>
+                    <select id="proj1-knowledge" name="proj1-knowledge">
+                        <option value="">-- Seleciona --</option>
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermedio">Intermédio</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj1-skills">Que competências técnicas possuis (programação, CAD, análise estrutural, etc.)?</label>
+                    <textarea id="proj1-skills" name="proj1-skills" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj1-motivation">Porque te interessa este projeto especificamente?</label>
+                    <textarea id="proj1-motivation" name="proj1-motivation" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj1-contribution">Como achas que podes contribuir para o sucesso do projeto?</label>
+                    <textarea id="proj1-contribution" name="proj1-contribution" rows="4"></textarea>
+                </div>
+
+            <!-- ASTRO_MARKER -->
+            </section>
+
+            <!-- Perguntas Projeto 2 -->
+            <section id="NSS-section" class="conditional-section" style="display: none;">
+                <h2>Projeto 2</h2>
+                
+                <div class="form-group">
+                    <label for="proj2-knowledge">Qual é o teu nível de conhecimento técnico na área aeroespacial?</label>
+                    <select id="proj2-knowledge" name="proj2-knowledge">
+                        <option value="">-- Seleciona --</option>
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermedio">Intermédio</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj2-skills">Que competências técnicas possuis (programação, CAD, análise estrutural, etc.)?</label>
+                    <textarea id="proj2-skills" name="proj2-skills" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj2-motivation">Porque te interessa este projeto especificamente?</label>
+                    <textarea id="proj2-motivation" name="proj2-motivation" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj2-contribution">Como achas que podes contribuir para o sucesso do projeto?</label>
+                    <textarea id="proj2-contribution" name="proj2-contribution" rows="4"></textarea>
+                </div>
+            
+            <!-- NSS_MARKER -->
+            </section>
+
+            <!-- Perguntas Projeto 3 -->
+            <section id="STAR-section" class="conditional-section" style="display: none;">
+                <h2>Projeto 3</h2>
+                
+                <div class="form-group">
+                    <label for="proj3-knowledge">Qual é o teu nível de conhecimento técnico na área aeroespacial?</label>
+                    <select id="proj3-knowledge" name="proj3-knowledge">
+                        <option value="">-- Seleciona --</option>
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermedio">Intermédio</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj3-skills">Que competências técnicas possuis (programação, CAD, análise estrutural, etc.)?</label>
+                    <textarea id="proj3-skills" name="proj3-skills" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj3-motivation">Porque te interessa este projeto especificamente?</label>
+                    <textarea id="proj3-motivation" name="proj3-motivation" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="proj3-contribution">Como achas que podes contribuir para o sucesso do projeto?</label>
+                    <textarea id="proj3-contribution" name="proj3-contribution" rows="4"></textarea>
+                </div>
+
+            <!-- STAR_MARKER -->
+            </section>
+
+            <!-- <div class="submit-container">
+                <button type="submit" class="submit-btn">Submeter Candidatura</button>
+            </div> -->
+        </form>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[name="areas"]');
+        const sections = {
+            'administrativa': document.getElementById('administrativa-section'),
+            'projeto1': document.getElementById('ASTRO-section'),
+            'projeto2': document.getElementById('NSS-section'),
+            'projeto3': document.getElementById('STAR-section')
+        };
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const area = this.value;
+                const section = sections[area];
+                
+                if (this.checked) {
+                    section.style.display = 'block';
+                    setTimeout(() => {
+                        section.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 100);
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+
+        document.getElementById('recruitmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Verificar se pelo menos uma área foi selecionada
+            const checkedAreas = document.querySelectorAll('input[name="areas"]:checked');
+            if (checkedAreas.length === 0) {
+                alert('Por favor, seleciona pelo menos uma área de interesse.');
+                return;
+            }
+            
+            // Recolher dados do formulário
+            const formData = new FormData(this);
+            const data = {};
+            
+            // Processar dados normais
+            for (let [key, value] of formData.entries()) {
+                if (key === 'areas') {
+                    if (!data.areas) data.areas = [];
+                    data.areas.push(value);
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            console.log('Dados submetidos:', data);
+            
+            // Mostrar mensagem de sucesso
+            alert('Candidatura submetida com sucesso! Entraremos em contacto em breve.');
+            
+            // Aqui podes adicionar código para enviar os dados para um servidor
+            // Por exemplo: fetch('/api/submit', { method: 'POST', body: JSON.stringify(data) })
+        });
+
+        // No final do ficheiro HTML, dentro da tag <script>
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzAFrP0z0bbcjxN6K1ft77_EgPM42WyO4lUQHHnFLORHaKVJLVzCe0ZRpb-swGdaFMZcw/exec'; // URL do Apps Script
+
+        document.getElementById('recruitmentForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Verificar se pelo menos uma área foi selecionada
+            const checkedAreas = document.querySelectorAll('input[name="areas"]:checked');
+            if (checkedAreas.length === 0) {
+                alert('Por favor, seleciona pelo menos uma área de interesse.');
+                return;
+            }
+            
+            // Desativar botão durante submissão
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'A enviar...';
+            submitBtn.disabled = true;
+            
+            // Recolher dados do formulário
+            const formData = new FormData(this);
+            const data = {};
+            
+            for (let [key, value] of formData.entries()) {
+                if (key === 'areas') {
+                    if (!data.areas) data.areas = [];
+                    data.areas.push(value);
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                alert('Candidatura submetida com sucesso! Entraremos em contacto em breve.');
+                this.reset(); // Limpa o formulário
+                
+                // Esconde todas as secções condicionais
+                document.querySelectorAll('.conditional-section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+            } catch (error) {
+                console.error('Erro:', error);
+                alert('Ocorreu um erro ao enviar a candidatura. Por favor, tenta novamente.');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
+>>>>>>> 9779a46237afb5e8a9c55db7e170c9bb2a8891e3

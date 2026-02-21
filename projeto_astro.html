@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -367,4 +368,375 @@
         });
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr_Projeto ASTRO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projeto_astro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="NuAr — Página Inicial">
+            <img src="images/logo_cor.png" alt="NuAr Logo">
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item dropdown" id="dropdown">
+                <a href="projects.html" class="nav-link dropdown-toggle">
+                    Projetos <span class="arrow-down">▼</span>
+                </a>
+                <div class="dropdown-content">
+                    <a href="projeto_astro.html" class="dropdown-item">🚀 ASTRO</a>
+                    <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                    <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                    <a href="projects.html" class="dropdown-item">Ver Todos →</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="activities_test.html" class="nav-link">Atividades</a>
+            </li>
+            <li class="nav-item">
+                <a href="educativa.html" class="nav-link">Programa Educativo</a>
+            </li>
+            <li class="nav-item">
+                <a href="contacts2.html" class="nav-link">Contactos</a>
+            </li>
+        </ul>
+
+        <div class="language-switcher">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <a href="index-en.html" class="lang-link" aria-label="English">EN</a> -->
+        </div>
+    </div>
+    </nav>
+
+    <div class="page-content">
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-content">
+            <div class="project-status">
+                <span>🔄</span>
+                <span>In Development</span>
+            </div>
+            <h1>🚀 Aerospace Student Team for Rocketry Operations (ASTRO)</h1>
+            <p>Development of a 3U CubeSat for atmospheric research and educational purposes, featuring advanced sensor payload and autonomous systems.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Left Column - Main Content -->
+        <div class="main-column">
+            <!-- Project Overview -->
+            <div class="content-section">
+                <h2 class="section-title">📋 Project Overview</h2>
+                <div class="project-overview">
+                    <p>The AeroSat-1 mission represents our most ambitious project to date, involving the complete development lifecycle of a 3U CubeSat designed for atmospheric research. This comprehensive project encompasses satellite design, payload development, ground station operations, and mission management.</p>
+                    
+                    <p>Our team is working on cutting-edge miniaturized instruments capable of measuring atmospheric parameters including temperature profiles, humidity levels, and trace gas concentrations. The satellite will also serve as an educational platform, allowing students to gain hands-on experience with space systems engineering.</p>
+
+                    <p>The mission timeline spans 18 months from initial design to launch readiness, with extensive testing phases including thermal vacuum testing, vibration testing, and comprehensive systems integration verification.</p>
+                </div>
+
+                <!-- Technical Specifications -->
+                <h3 style="margin: 2rem 0 1rem 0; color: #2c3e50;">🔧 Technical Specifications</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-value">3U</div>
+                        <div class="spec-label">CubeSat Format</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-value">4.2kg</div>
+                        <div class="spec-label">Total Mass</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-value">400km</div>
+                        <div class="spec-label">Target Orbit</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-value">2 Years</div>
+                        <div class="spec-label">Mission Duration</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-value">435MHz</div>
+                        <div class="spec-label">Communication</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-value">15W</div>
+                        <div class="spec-label">Solar Power</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Timeline -->
+            <div class="content-section">
+                <h2 class="section-title">📅 Development Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-date">Jan 2024</div>
+                        <div class="timeline-title">✅ Project Initiation</div>
+                        <div class="timeline-desc">Team formation, requirements analysis, and initial design concepts</div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-date">Mar 2024</div>
+                        <div class="timeline-title">✅ Preliminary Design Review</div>
+                        <div class="timeline-desc">System architecture finalized, component selection, and risk assessment</div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-date">Jun 2024</div>
+                        <div class="timeline-title">✅ Critical Design Review</div>
+                        <div class="timeline-desc">Detailed designs completed, manufacturing plans approved</div>
+                    </div>
+                    <div class="timeline-item current">
+                        <div class="timeline-date">Aug 2024</div>
+                        <div class="timeline-title">🔄 Integration & Testing</div>
+                        <div class="timeline-desc">Component integration, subsystem testing, and software development</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Nov 2024</div>
+                        <div class="timeline-title">🔜 Flight Model Assembly</div>
+                        <div class="timeline-desc">Final assembly, qualification testing, and launch preparation</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2025</div>
+                        <div class="timeline-title">🚀 Launch</div>
+                        <div class="timeline-desc">Launch campaign, commissioning, and mission operations</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Placeholder -->
+            <div class="content-section">
+                <h2 class="section-title">📸 Project Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <span>🛠️ Assembly Photos</span>
+                    </div>
+                    <div class="gallery-item">
+                        <span>📊 Test Results</span>
+                    </div>
+                    <div class="gallery-item">
+                        <span>🔬 Lab Work</span>
+                    </div>
+                    <div class="gallery-item">
+                        <span>👨‍💻 Team at Work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Sidebar -->
+        <div class="sidebar">
+            <!-- Project Progress -->
+            <div class="info-card">
+                <h3 class="info-title">📊 Project Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 65%;"></div>
+                </div>
+                <div class="progress-text">65% Complete</div>
+                <div style="margin-top: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Design Phase</span>
+                        <span>✅ 100%</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Manufacturing</span>
+                        <span>🔄 80%</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>Testing</span>
+                        <span>🔄 45%</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Documentation</span>
+                        <span>⏳ 30%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Members -->
+            <div class="info-card">
+                <h3 class="info-title">👥 Team Members</h3>
+                <div class="team-member">
+                    <div class="member-avatar">JM</div>
+                    <div class="member-info">
+                        <h4>João Miguel</h4>
+                        <div class="member-role">Project Manager</div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">AS</div>
+                    <div class="member-info">
+                        <h4>Ana Sofia</h4>
+                        <div class="member-role">Systems Engineer</div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">PR</div>
+                    <div class="member-info">
+                        <h4>Pedro Ribeiro</h4>
+                        <div class="member-role">Software Lead</div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">MC</div>
+                    <div class="member-info">
+                        <h4>Maria Clara</h4>
+                        <div class="member-role">Payload Engineer</div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 1rem; color: #666;">
+                    <em>+ 8 more team members</em>
+                </div>
+            </div>
+
+            <!-- Project Resources -->
+            <div class="info-card">
+                <h3 class="info-title">📚 Resources</h3>
+                <ul class="resources-list">
+                    <li class="resource-item">
+                        <a href="#" class="resource-link">
+                            <span>📄</span>
+                            <span>Technical Documentation</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a href="#" class="resource-link">
+                            <span>🔗</span>
+                            <span>GitHub Repository</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a href="#" class="resource-link">
+                            <span>📊</span>
+                            <span>Project Timeline</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a href="#" class="resource-link">
+                            <span>💬</span>
+                            <span>Team Chat</span>
+                        </a>
+                    </li>
+                    <li class="resource-item">
+                        <a href="#" class="resource-link">
+                            <span>📧</span>
+                            <span>Contact Team</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="maintenance-overlay">
+        <div class="maintenance-box">
+            <h1>Em manutenção</h1>
+            <p>Em breve haverá novidades.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate progress bar on load
+            const progressBar = document.querySelector('.progress-fill');
+            setTimeout(() => {
+                progressBar.style.width = '65%';
+            }, 500);
+
+            // Add click handlers for gallery items
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    alert('Gallery functionality would open image viewer here');
+                });
+            });
+
+            // Add smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdown = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle
+        if (window.innerWidth <= 768) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Handle dropdown behavior on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+>>>>>>> 9779a46237afb5e8a9c55db7e170c9bb2a8891e3
 </html>
