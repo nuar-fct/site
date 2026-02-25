@@ -49,24 +49,49 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a href="activities_test.html" class="nav-link">Atividades</a>
+                <a href="activities.html" class="nav-link">Atividades</a>
             </li>
             <li class="nav-item">
                 <a href="educativa.html" class="nav-link">Programa Educativo</a>
             </li>
             <li class="nav-item">
-                <a href="contacts2.html" class="nav-link">Contactos</a>
+                <a href="contacts.html" class="nav-link">Contactos</a>
+            </li>
+            
+            <!-- EN para MOBILE, no fim da lista -->
+            <li class="nav-item language-switcher-mobile">
+                <div class="language-mobile-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10
+                            15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+
+                <span class="lang-divider-mobile"></span>
+
+                <a href="index.html" class="lang-link" aria-label="English">EN</a>
+                </div>
             </li>
         </ul>
+        <!-- EN para DESKTOP, fora do ul -->
+        <div class="language-switcher language-switcher-desktop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10
+                            15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
 
-        <div class="language-switcher">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
-            <a href="index.html" class="lang-link" aria-label="English">EN</a> -->
-        </div>
+                <span class="lang-divider-mobile"></span>
+
+                <a href="index.html" class="lang-link" aria-label="English">EN</a>
+            </div>
+
     </div>
     </nav>
 
@@ -127,81 +152,80 @@
     </div>
 </body>
 
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <!-- Logo and Description -->
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="images/logo_branco.png" alt="NuAr Logo">
-                    <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+    <!-- ════════════════════════════════════════
+         FOOTER
+    ════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+
+                <!-- Marca e redes sociais -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo_branco.png" alt="NuAr Logo">
+                        <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                    </div>
+                    <p class="footer-description">Tornamos aeroespacial acessível a todos.</p>
+                    <nav class="footer-social" aria-label="Redes sociais">
+                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:nuar@ae.fct.unl.pt" class="footer-social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </nav>
                 </div>
-                <p class="footer-description">
-                    Tornamos Aeroespacial acessível a todos!
-                </p>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                            <rect x="2" y="9" width="4" height="12"/>
-                            <circle cx="4" cy="4" r="2"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:nuar@ae.fct.unl.pt" class="footer-social-link" aria-label="Email">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                    </a>
+
+                <!-- Links rápidos -->
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li><a href="projects.html">Projetos</a></li>
+                        <li><a href="activities.html">Atividades</a></li>
+                        <li><a href="educativa.html">Prog. Educativo</a></li>
+                    </ul>
                 </div>
+
+                <!-- Legal -->
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="TermosServicos.html">Termos de Serviço</a></li>
+                        <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-contact">
+                    <h3>Contactos</h3>
+                    <div class="contact-info">
+                        <p>FCT - Universidade NOVA de Lisboa</p>
+                        <p>2829-516 Caparica, Portugal</p>
+                        <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="about.html">Sobre Nós</a></li>
-                    <li><a href="projects.html">Projetos</a></li>
-                    <li><a href="activities_test.html">Atividades</a></li>
-                    <li><a href="educativa.html">Programa Educativo</a></li>
-                </ul>
-            </div>
-
-            <!-- Legal -->
-            <div class="footer-links">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="TermosServicos.html">Termos de Serviço</a></li>
-                    <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="footer-contact">
-                <h3>Contactos</h3>
-                <div class="contact-info">
-                    <p>Universidade NOVA de Lisboa </p>
-                    <p>Faculdade de Ciência e Tecnologias</p>
-                    <p>2829-516 Caparica, Portugal</p>
-                    <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
-                </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="copyright">© 2026 NuAr - Núcleo de Aeroespacial NOVA FCT. Todos os direitos reservados.</p>
             </div>
         </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="footer-divider"></div>
-            <p class="copyright">
-                © 2025 NuAr - Núcleo de Aeroespacial da Universidade NOVA de Lisboa. All rights reserved.
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 </html>

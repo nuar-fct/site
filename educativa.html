@@ -4,7 +4,7 @@
     <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NuAr_Programa Educativo</title>
+    <title>NuAr - Programa Educativo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/educativa.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -43,13 +43,13 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a href="activities_test.html" class="nav-link">Atividades</a>
+                <a href="activities.html" class="nav-link">Atividades</a>
             </li>
             <li class="nav-item">
                 <a href="educativa.html" class="nav-link">Programa Educativo</a>
             </li>
             <li class="nav-item">
-                <a href="contacts2.html" class="nav-link">Contactos</a>
+                <a href="contacts.html" class="nav-link">Contactos</a>
             </li>
             
             <!-- EN para MOBILE, no fim da lista -->
@@ -171,7 +171,7 @@
                     <span class="activity-icon">🛰️</span>
                     <h3 class="activity-title">Workshops</h3>
                     <p class="activity-description">
-                        Realizamos workshops com tema a debater com a entidade interessada (podendo ser mais geral ou focado em eletórnica ou mecânica, por exemplo).
+                        Realizamos workshops com tema a debater com a entidade interessada (podendo ser mais geral ou focado em eletrónica ou mecânica, por exemplo).
                     </p>
                     <div class="activity-details">
                         <span class="activity-ages">10-16 anos</span>
@@ -344,10 +344,10 @@
                         <p class="resource-description">
                             Preenche o nosso formulário para solicitar uma atividade.
                         </p>
-                        <!-- <a href="SEU_LINK_GOOGLE_FORMS" class="resource-btn" target="_blank"></a> -->
-                        <a href="#" class="resource-btn" onclick="formIndisponivel(event)">
+                        <a href="https://forms.gle/GcNp7mcLLXPpMZ7r6" class="resource-btn" target="_blank">Formulário</a>
+                        <!-- <a href="#" class="resource-btn" onclick="formIndisponivel(event)">
                             Formulário
-                        </a>
+                        </a> -->
                     </div>
                     <!-- Popup de manutenção -->
                     <div id="form-overlay" class="form-overlay">
@@ -407,11 +407,11 @@
                 <h3>Pronto para começar?</h3>
                 <p>Escolhe a forma mais conveniente de nos contactar e vamos planear uma atividade incrível!</p>
                 <div class="cta-buttons">
-                    <!-- <a href="SEU_LINK_GOOGLE_FORMS" class="cta-btn-primary" target="_blank"> -->
-                    <a href="#" class="cta-btn-primary" onclick="formIndisponivel(event)">
+                    <a href="https://forms.gle/Y2QF564wt63x6Csh8" class="cta-btn-primary" target="_blank">📝 Preencher Formulário</a>
+                    <!-- <a href="#" class="cta-btn-primary" onclick="formIndisponivel(event)">
                         📝 Preencher Formulário
-                    </a>
-                    <a href="mailto:nuar@ae.fct.unl.pt" class="cta-btn-secondary" target="_blank">
+                    </a> -->
+                    <a href="mailto:nuar@ae.fct.unl.pt" class="cta-btn-secondary">
                         ✉️ Enviar Email
                     </a>
                 </div>
@@ -616,27 +616,29 @@
 
 </body>
 
-<footer class="footer">
+    <!-- ════════════════════════════════════════
+         FOOTER
+    ════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <div class="footer-content">
-                <!-- Logo and Description -->
+
+                <!-- Marca e redes sociais -->
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <img src="images/logo_branco.png" alt="NuAr Logo">
                         <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
                     </div>
-                    <p class="footer-description">
-                        Tornamos Aeroespacial acessível a todos!
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram">
+                    <p class="footer-description">Tornamos aeroespacial acessível a todos.</p>
+                    <nav class="footer-social" aria-label="Redes sociais">
+                        <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                                 <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                                 <rect x="2" y="9" width="4" height="12"/>
@@ -649,17 +651,17 @@
                                 <polyline points="22,6 12,13 2,6"/>
                             </svg>
                         </a>
-                    </div>
+                    </nav>
                 </div>
 
-                <!-- Quick Links -->
+                <!-- Links rápidos -->
                 <div class="footer-links">
-                    <h3>Páginas</h3>
+                    <h3>Links</h3>
                     <ul>
                         <li><a href="about.html">Sobre Nós</a></li>
                         <li><a href="projects.html">Projetos</a></li>
-                        <li><a href="activities_test.html">Atividades</a></li>
-                        <li><a href="educativa.html">Programa Educativo</a></li>
+                        <li><a href="activities.html">Atividades</a></li>
+                        <li><a href="educativa.html">Prog. Educativo</a></li>
                     </ul>
                 </div>
 
@@ -672,24 +674,21 @@
                     </ul>
                 </div>
 
-                <!-- Contact -->
+                <!-- Contacto -->
                 <div class="footer-contact">
                     <h3>Contactos</h3>
                     <div class="contact-info">
-                        <p>Universidade NOVA de Lisboa</p>
-                        <p>Faculdade de Ciência e Tecnologias</p>
+                        <p>FCT - Universidade NOVA de Lisboa</p>
                         <p>2829-516 Caparica, Portugal</p>
                         <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
                     </div>
                 </div>
+
             </div>
 
-            <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <div class="footer-divider"></div>
-                <p class="copyright">
-                    © 2025 NuAr - Núcleo de Aeroespacial da Universidade NOVA de Lisboa. All rights reserved.
-                </p>
+                <p class="copyright">© 2026 NuAr - Núcleo de Aeroespacial NOVA FCT. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
