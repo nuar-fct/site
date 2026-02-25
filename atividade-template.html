@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="images/LogoPequeno_2.png" sizes="45x45">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuAr - Churrasco NuAr</title><!-- ALTERAR O TÍTULO -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/activity-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="NuAr — Página Inicial">
+                <img src="images/logo_cor.png" alt="NuAr Logo">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item dropdown" id="dropdown">
+                    <a href="projects.html" class="nav-link dropdown-toggle">Projetos <span class="arrow-down">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="projeto_astro.html" class="dropdown-item">🚀 ASTRO</a>
+                        <a href="projeto_star.html" class="dropdown-item">🔭 STAR</a>
+                        <a href="projeto_nss.html" class="dropdown-item">🎯 NSS</a>
+                        <a href="projects.html" class="dropdown-item">Ver Todos →</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="activities.html" class="nav-link">Atividades</a></li>
+                <li class="nav-item"><a href="educativa.html" class="nav-link">Programa Educativo</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Contactos</a></li>
+                <li class="nav-item language-switcher-mobile">
+                    <div class="language-mobile-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <span class="lang-divider-mobile"></span>
+                        <a href="#" class="lang-link" aria-label="English">EN</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="language-switcher language-switcher-desktop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <span class="lang-divider-mobile"></span>
+                <a href="#" class="lang-link" aria-label="English">EN</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ════════════════════════════════════════
+         HERO DA ATIVIDADE — imagem de capa
+    ════════════════════════════════════════ -->
+    <section class="activity-hero">
+        <!-- ALTERAR o src para a imagem da atividade -->
+        <img src="https://drive.google.com/thumbnail?id=1wAzmY25EEA1sgQxv_rXQvXe4-DeUAgGb&sz=w1000"
+             alt="Churrasco NuAr" class="activity-hero-img">
+        <div class="activity-hero-overlay"></div>
+        <div class="activity-hero-content">
+            <a href="activities.html" class="activity-back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+                </svg>
+                Voltar às atividades
+            </a>
+            <h1 class="activity-hero-title">Churrasco NuAr</h1><!-- ALTERAR -->
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════
+         CONTEÚDO PRINCIPAL
+    ════════════════════════════════════════ -->
+    <main class="activity-main">
+        <div class="activity-container">
+
+            <!-- Coluna esquerda: descrição + fotos -->
+            <div class="activity-body">
+
+                <!-- Descrição -->
+                <section class="activity-section">
+                    <h2 class="activity-section-title">Sobre a atividade</h2>
+                    <!-- ALTERAR: escreve aqui a descrição completa da atividade -->
+                    <p>Descrição completa da atividade. Podes escrever vários parágrafos, adicionar listas, etc.</p>
+                    <p>Parágrafo adicional se necessário.</p>
+                </section>
+
+                <!-- Galeria de fotos — só mostrar se a atividade já aconteceu -->
+                <section class="activity-section">
+                    <h2 class="activity-section-title">Galeria</h2>
+                    <div class="activity-gallery">
+                        <!-- ALTERAR: substituir os src pelas tuas fotos do Google Drive -->
+                        <!-- Formato: https://drive.google.com/thumbnail?id=ID_DA_FOTO&sz=w800 -->
+                        <div class="gallery-item">
+                            <img src="https://drive.google.com/thumbnail?id=1wAzmY25EEA1sgQxv_rXQvXe4-DeUAgGb&sz=w800" alt="Foto 1" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://drive.google.com/thumbnail?id=1wAzmY25EEA1sgQxv_rXQvXe4-DeUAgGb&sz=w800" alt="Foto 2" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://drive.google.com/thumbnail?id=1wAzmY25EEA1sgQxv_rXQvXe4-DeUAgGb&sz=w800" alt="Foto 3" loading="lazy">
+                        </div>
+                        <!-- Adicionar mais <div class="gallery-item"> conforme necessário -->
+                    </div>
+                    <a href="LINK_DA_PASTA_DRIVE" class="gallery-all-btn" target="_blank">
+                        Ver todas as fotos
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </section>
+
+            </div>
+
+            <!-- Coluna direita: detalhes + inscrição -->
+            <aside class="activity-sidebar">
+
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title">Detalhes</h3>
+
+                    <div class="sidebar-details">
+                        <!-- Data — ALTERAR -->
+                        <div class="sidebar-detail-item">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="sidebar-detail-label">Data</span>
+                                <span class="sidebar-detail-value">15 de Março de 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- Hora — ALTERAR -->
+                        <div class="sidebar-detail-item">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="sidebar-detail-label">Hora</span>
+                                <span class="sidebar-detail-value">13h00</span>
+                            </div>
+                        </div>
+
+                        <!-- Local — ALTERAR -->
+                        <div class="sidebar-detail-item">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="sidebar-detail-label">Local</span>
+                                <span class="sidebar-detail-value">FCT NOVA, Caparica</span>
+                            </div>
+                        </div>
+
+                        <!-- Vagas — ALTERAR ou remover se não aplicável -->
+                        <div class="sidebar-detail-item">
+                            <span class="detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="sidebar-detail-label">Vagas</span>
+                                <span class="sidebar-detail-value">Aberto a todos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão de inscrição — ALTERAR o href ou remover se a atividade já aconteceu -->
+                    <a href="mailto:nuar@ae.fct.unl.pt?subject=Inscrição — Churrasco NuAr" class="sidebar-cta">
+                        Confirmar presença
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+
+    <!-- Lightbox simples para a galeria -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-arrow lightbox-arrow-left" onclick="event.stopPropagation(); navigateLightbox(-1)">&#10094;</span>
+        <span class="lightbox-arrow lightbox-arrow-right" onclick="event.stopPropagation(); navigateLightbox(1)">&#10095;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+
+    <script>
+        // ── Navbar ──
+        const hamburger = document.getElementById('hamburger');
+        const navMenu   = document.getElementById('nav-menu');
+        const dropdown  = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 900) { e.preventDefault(); dropdown.classList.toggle('active'); }
+            });
+        }
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => {
+            n.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                if (dropdown) dropdown.classList.remove('active');
+            });
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                if (dropdown) dropdown.classList.remove('active');
+            }
+        });
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                if (dropdown) dropdown.classList.remove('active');
+            }
+        });
+
+        // ── Galeria / Lightbox ──
+        let currentIndex = 0;
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+
+        galleryItems.forEach((img, index) => {
+            img.addEventListener('click', () => openLightbox(index));
+        });
+
+        function openLightbox(index) {
+            currentIndex = index;
+            const lb = document.getElementById('lightbox');
+            const lbImg = document.getElementById('lightbox-img');
+            const counter = document.getElementById('lightbox-counter');
+            lbImg.src = galleryItems[index].src;
+            counter.textContent = `${index + 1} / ${galleryItems.length}`;
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function navigateLightbox(dir) {
+            currentIndex = (currentIndex + dir + galleryItems.length) % galleryItems.length;
+            openLightbox(currentIndex);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const lb = document.getElementById('lightbox');
+            if (!lb.classList.contains('active')) return;
+            if (e.key === 'Escape')      closeLightbox();
+            if (e.key === 'ArrowRight')  navigateLightbox(1);
+            if (e.key === 'ArrowLeft')   navigateLightbox(-1);
+        });
+    </script>
+
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo_branco.png" alt="NuAr Logo">
+                    <img src="images/Logo_AEFCT_CMYK_PNG_horizontal_monocromático.png" alt="AEFCT Logo">
+                </div>
+                <p class="footer-description">Tornamos Aeroespacial acessível a todos!</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/nuarfct/" class="footer-social-link" aria-label="Instagram" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/nuarfct/" class="footer-social-link" aria-label="LinkedIn" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="projects.html">Projetos</a></li>
+                    <li><a href="activities.html">Atividades</a></li>
+                    <li><a href="educativa.html">Programa Educativo</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="TermosServicos.html">Termos de Serviço</a></li>
+                    <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contactos</h3>
+                <div class="contact-info">
+                    <p>FCT — Universidade NOVA de Lisboa</p>
+                    <p>2829-516 Caparica, Portugal</p>
+                    <p><a href="mailto:nuar@ae.fct.unl.pt">nuar@ae.fct.unl.pt</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-divider"></div>
+            <p class="copyright">© 2026 NuAr - Núcleo de Aeroespacial NOVA FCT. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+</html>
