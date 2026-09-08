@@ -438,12 +438,20 @@
                 grid-column: span 1;
             }
 
+            .resources-section {
+                padding: 0rem 0rem;
+            }
+
             .resources-grid {
                 grid-template-columns: 1fr;
             }
 
             .process-steps {
                 grid-template-columns: 1fr;
+            }
+            
+            .cta-box {
+                border-radius: 0px;
             }
 
             .cta-buttons {
@@ -666,7 +674,7 @@
             }
 
             .main-content {
-                padding: 2rem 1rem;
+                padding: 0rem 0rem;
             }
 
             .content-section {
