@@ -82,7 +82,7 @@ body {
     -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(26,111,196,.10);
     box-shadow: 0 2px 12px rgba(0,0,0,.05);
-    padding: 0.85rem 2rem;
+    padding: 0.8rem 2rem;
     transition: all 0.3s ease;
 }
 
@@ -90,7 +90,7 @@ body {
     max-width: 1450px;
     margin: 0 auto;
     padding: 0 24px;
-    height: 48px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -423,6 +423,7 @@ display: none;
     }
     
     .nav-container {
+        height: 40px;
         justify-content: space-between;
     }
 
