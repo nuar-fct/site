@@ -73,7 +73,7 @@
 
                 <span class="lang-divider-mobile"></span>
 
-                <a href="index.html" class="lang-link" aria-label="English">EN</a>
+                <button class="lang-link lang-toggle" aria-label="English">EN</button>
                 </div>
             </li>
         </ul>
@@ -90,7 +90,7 @@
 
                 <span class="lang-divider-mobile"></span>
 
-                <a href="index.html" class="lang-link" aria-label="English">EN</a>
+                <button class="lang-link lang-toggle" aria-label="English">EN</button>
             </div>
 
     </div>
@@ -117,12 +117,10 @@
             </div>
             <div class="divider"></div>
             <p class="about-info-description">
-                Queremos mostrar que a área aeroespacial é para todos, reunindo estudantes
-                de diferentes áreas da engenharia e das ciências para desenvolver ideias além da sala de aula.
+                Queremos mostrar que a área aeroespacial é para todos, reunindo estudantes de diferentes áreas da engenharia e das ciências para desenvolver ideias além da sala de aula.
             </p>
             <p class="about-info-description">
-                Para isto organizamos vários tipos de eventos e competições para todos os estudantes e ajudamos os nossos
-                membros a desenvolver projetos que proporcionam experiências práticas.
+                Para isto organizamos vários tipos de eventos e competições para todos os estudantes e ajudamos os nossos membros a desenvolver projetos que proporcionam experiências práticas.
             </p>
         </div>
 
@@ -135,9 +133,7 @@
             </div>
             <div class="divider"></div>
             <p class="about-info-description">
-                Aspiramos tornar-nos numa organização estudantil de referência em aeroespacial tanto em Portugal
-                quanto na Europa, reconhecida pela inovação e pelo contributo para a indústria e comunidade
-                científica aeroespacial — tanto universitária como pré-universitária.
+                Aspiramos tornar-nos numa organização estudantil de referência em aeroespacial tanto em Portugal quanto na Europa, reconhecida pela inovação e pelo contributo para a indústria e comunidade científica aeroespacial, tanto universitária como pré-universitária.
             </p>
         </div>
 
@@ -199,26 +195,18 @@
             <div class="horizontal-left fade-up">
                 <h3>Fundados para inovar</h3>
                 <p>
-                    O NuAr foi fundado por um grupo de estudantes interessados por engenharia aeroespacial da
-                    Universidade NOVA de Lisboa, quando este curso ainda não existia na mesma. Unidos pela visão
-                    comum de promover o conhecimento em aeroespacial e criar oportunidades de aprendizagem prática
-                    para além do ambiente tradicional de sala de aula foi <b>fundado o NuAr no dia 8 de junho de 2023</b>.
+                    O NuAr foi fundado por um grupo de estudantes interessados por engenharia aeroespacial da Universidade NOVA de Lisboa, quando este curso ainda não existia na mesma. Unidos pela visão comum de promover o conhecimento em aeroespacial e criar oportunidades de aprendizagem prática para além do ambiente tradicional de sala de aula foi <b>fundado o NuAr no dia 8 de junho de 2023</b>.
                 </p>
                 <p>
-                    Desde a nossa fundação, crescemos e tornámo-nos numa comunidade de <b>estudantes de várias áreas
-                    da engenharia e das ciências</b>, todos unidos pela fascínio pelas tecnologias aeroespaciais e
-                    pela vontade de ajudar os estudantes.
+                    Desde a nossa fundação, crescemos e tornámo-nos numa comunidade de <b>estudantes de várias áreas da engenharia e das ciências</b>, todos unidos pela fascínio pelas tecnologias aeroespaciais e pela vontade de ajudar os estudantes.
                 </p>
                 <p>Atualmente, o NuAr continua a expandir o seu impacto com:</p>
                 <ul>
                     <li>
-                        <b>Projetos inovadores</b> - onde os nossos membros têm liberdade criativa e apoio
-                        técnico para desenvolver as suas ideias em equipa.
+                        <b>Projetos inovadores</b> - onde os nossos membros têm liberdade criativa e apoio técnico para desenvolver as suas ideias em equipa.
                     </li>
                     <li>
-                        <b>Iniciativas educativas</b> - através de visitas a várias escolas e empresas,
-                        mostramos aos jovens que a engenharia é algo que todos podemos alcançar e que
-                        o céu não é o limite.
+                        <b>Iniciativas educativas</b> - através de visitas a várias escolas e empresas, mostramos aos jovens que a engenharia é algo que todos podemos alcançar e que o céu não é o limite.
                     </li>
                 </ul>
             </div>
@@ -319,65 +307,67 @@
         </div>
     </footer>
 
-<!-- ===================== SCRIPTS ===================== -->
-<script>
-    lucide.createIcons();
+    <!-- ===================== SCRIPTS ===================== -->
+    <script>
+        lucide.createIcons();
 
-    // Navbar mobile toggle
-    const hamburger = document.getElementById('hamburger');
-    const navMenu   = document.getElementById('nav-menu');
-    const dropdown  = document.getElementById('dropdown');
-    const ddToggle  = document.querySelector('.dropdown-toggle');
+        // Navbar mobile toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu   = document.getElementById('nav-menu');
+        const dropdown  = document.getElementById('dropdown');
+        const ddToggle  = document.querySelector('.dropdown-toggle');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    if (window.innerWidth <= 900) {
-        ddToggle.addEventListener('click', e => {
-            e.preventDefault();
-            dropdown.classList.toggle('active');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
         });
-    }
 
-    document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n =>
-        n.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        })
-    );
-
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 900) {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-            dropdown.classList.remove('active');
+        if (window.innerWidth <= 900) {
+            ddToggle.addEventListener('click', e => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
         }
-    });
 
-    document.addEventListener('click', e => {
-        if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            dropdown.classList.remove('active');
-        }
-    });
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n =>
+            n.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            })
+        );
 
-    // Scroll-triggered fade-in
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animationPlayState = 'running';
-                observer.unobserve(entry.target);
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                dropdown.classList.remove('active');
             }
         });
-    }, { threshold: 0.15 });
 
-    document.querySelectorAll('.fade-up').forEach(el => {
-        el.style.animationPlayState = 'paused';
-        observer.observe(el);
-    });
-</script>
+        document.addEventListener('click', e => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdown.classList.remove('active');
+            }
+        });
+
+        // Scroll-triggered fade-in
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+
+    <script src="js/translator_about.js"></script>
 </body>
 </html>
