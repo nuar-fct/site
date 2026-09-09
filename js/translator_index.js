@@ -17,7 +17,8 @@ const dictionary = {
     "Os nossos projetos": "Our projects",
 
     // Recrutamento
-    "Em Destaque": "Highlights",
+    "Em":" ", 
+    "Destaque": "Highlights",
     "Recrutamento Aberto": "Recruitment Open",
     "Junta-te ao NuAr": "Join NuAr 2026",
     "Estamos a recrutar novos membros! Se gostas do espaço e tens vontade de aprender fazendo, esta é a tua oportunidade.": 
