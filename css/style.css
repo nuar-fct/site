@@ -245,11 +245,18 @@ body {
 }
 
 .lang-link {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    cursor: pointer;
+    line-height: inherit;
+
     font-size: .9rem;
     font-weight: 600;
     color: var(--slate);
     text-decoration: none;
-    /* padding: 6px 10px; */
     border-radius: 6px;
     transition: all .2s;
 }
