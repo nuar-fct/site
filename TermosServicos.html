@@ -73,7 +73,7 @@
 
                 <span class="lang-divider-mobile"></span>
 
-                <a href="index.html" class="lang-link" aria-label="English">EN</a>
+                <button class="lang-link lang-toggle" aria-label="English">EN</button>
                 </div>
             </li>
         </ul>
@@ -90,7 +90,7 @@
 
                 <span class="lang-divider-mobile"></span>
 
-                <a href="index.html" class="lang-link" aria-label="English">EN</a>
+                <button class="lang-link lang-toggle" aria-label="English">EN</button>
             </div>
 
     </div>
@@ -101,10 +101,7 @@
     <div class="termos-container">
             <h1>Termos de Serviço</h1>
             <p class="last-updated"><strong>Última atualização: 06/02/2026</strong></p>
-            <p>O Núcleo de Aeroespacial da Universidade NOVA de Lisboa, NuAr está inserido na Associação dos Estudantes da Faculdade de Ciências e Tecnologia da Universidade NOVA de Lisboa, AEFCT.
-                Enquanto entidade responsável pelo website nuarfct.com, respeitamos a tua privacidade e protegemos os teus dados pessoais em conformidade com 
-                o Regulamento (UE) 2016/679 do Parlamento Europeu e do Conselho, de 27 de abril de 2016 (“RGPD”) e demais legislação aplicável.</p>
-
+            <p>O Núcleo de Aeroespacial da Universidade NOVA de Lisboa, NuAr está inserido na Associação dos Estudantes da Faculdade de Ciências e Tecnologia da Universidade NOVA de Lisboa, AEFCT. Enquanto entidade responsável pelo website nuarfct.com, respeitamos a tua privacidade e protegemos os teus dados pessoais em conformidade com o Regulamento (UE) 2016/679 do Parlamento Europeu e do Conselho, de 27 de abril de 2016 (“RGPD”) e demais legislação aplicável.</p>
             <h2>1. Disposições gerais</h2>
             <p>O acesso e utilização deste website implicam a aceitação integral destes Termos de Serviço.</p>
             <p>Se não concordares com estes termos, abste-te de utilizar o website.</p>
@@ -151,6 +148,152 @@
             <h2>10. Lei Aplicável</h2>
             <p>Estes Termos de Serviço são regidos pela lei portuguesa. Qualquer litígio será submetido à jurisdição dos tribunais portugueses.</p>
     </div>
+
+    <!-- ════════════════════════════════════════
+         SCRIPTS — Navbar mobile + popup + stats
+    ════════════════════════════════════════ -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // ── Navbar scroll effect ──
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ── Navbar: menu hamburger ──
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdown = document.getElementById('dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', (e) => {
+                e.stopPropagation(); // previne propagação
+                const isOpen = navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                
+                // DEBUG: console log para verificar
+                console.log('Hamburger clicked, active:', hamburger.classList.contains('active'));
+            });
+
+            // Dropdown: em mobile só abre, em desktop segue o link
+            if (dropdownToggle) {
+                dropdownToggle.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 900) { // mudei de 768 para 900
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+
+            // Fecha menu ao clicar num link (exceto dropdown toggle)
+            document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(n => {
+                n.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Reset ao redimensionar para desktop
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 900) { // mudei de 768 para 900
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Fecha ao clicar fora
+            document.addEventListener('click', (e) => {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // ── Animação de contador nas stats ──
+        const observerOpts = { threshold: 0.5, rootMargin: '0px 0px -80px 0px' };
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.educativa-hero-stat-number').forEach(el => {
+                        const raw = el.textContent;
+                        const num = parseInt(raw.replace(/\D/g, ''), 10);
+                        const suffix = raw.includes('+') ? '+' : '';
+                        animateCounter(el, 0, num, suffix);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOpts);
+
+        const heroStats = document.querySelector('.educativa-hero-stats');
+        if (heroStats) statsObserver.observe(heroStats);
+
+        function animateCounter(el, start, end, suffix) {
+            const duration = 1800;
+            const startTime = performance.now();
+            (function tick(now) {
+                const t = Math.min((now - startTime) / duration, 1);
+                el.textContent = Math.floor(start + (end - start) * t) + suffix;
+                if (t < 1) requestAnimationFrame(tick);
+            })(performance.now());
+        }
+
+        // ── Smooth scroll para âncoras internas ──
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ── Popup de contacto ──
+        const contactPopup = document.getElementById('contactPopup');
+        
+        window.openContactPopup = function() {
+            if (contactPopup) {
+                contactPopup.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        };
+        
+        window.closeContactPopup = function() {
+            if (contactPopup) {
+                contactPopup.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        };
+
+        // Fecha ao clicar no overlay (fora do card)
+        if (contactPopup) {
+            contactPopup.addEventListener('click', function(e) {
+                if (e.target === this) window.closeContactPopup();
+            });
+        }
+
+        // Fecha com ESC
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') window.closeContactPopup();
+        });
+    });
+    </script>
+
 </body>
 
     <!-- ════════════════════════════════════════
@@ -229,4 +372,6 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/translator_termo_serv.js"></script>
 </html>
